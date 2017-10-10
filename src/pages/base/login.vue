@@ -7,7 +7,7 @@
 				</div>
 				<div class="login-content">
 					<div class="register-link">
-						<span>还没有注册？<a href="#">立即注册>></a></span>
+						<span>还没有注册？<router-link to="register">立即注册>></router-link></span>
 					</div>
 					<form action="#" onsubmit="return false">
 						<div class="form-group">
@@ -28,7 +28,7 @@
 						 	</label>
 						 </div>
 						 <div class="forget">
-						 	<a href="#">忘记密码</a>
+						  <router-link to="login">忘记密码</router-link>
 						 </div>
 					</div>
 				</div>
@@ -74,9 +74,8 @@
 		background: url(../../assets/img/login_bg.png);
 		background-size: 100% 100%;
 		.login-box {
-			width: 400px;
-			height: 400px;
-			margin-top: -60px;
+			width: 350px;
+			margin-top: -80px;
 			text-align: center;
 			.login-content {
 				margin: 30px 0;
@@ -99,13 +98,13 @@
 		margin: 10px 0;
 		.form-input {
 			width: 100%;
-			padding: 10px 12px;
+			padding: 8px 12px;
 			font-size: 18px;
 			color: #666;
 		}
 		.md-button {
 			width: 100%;
-			padding: 6px 10px;
+			padding: 5px 10px;
 			margin: 0;
 			color: #fff;
 			font-size: 18px;
@@ -129,7 +128,6 @@
 				position: relative;
 				&.checked::before {
 					content: '';
-					// display: inline-block;
 					width: 15px;
 					height: 15px;
 					position: absolute;
