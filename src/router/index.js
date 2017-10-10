@@ -1,5 +1,6 @@
 import Home from '@/pages/home'
-import Login from '@/pages/base/wrap'
+import Wrap from '@/pages/base/wrap'
+import Login from '@/pages/base/login'
 
 const routes = [
   {
@@ -9,12 +10,12 @@ const routes = [
   },
   {
     path: '/',
-    name: 'Login',
-    component: Login,
+    component: Wrap,
     children: [
     	{
     		path: 'login',
-
+        name: '登录',
+        component: Login,
     	}
     ]
   }

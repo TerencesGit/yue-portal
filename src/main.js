@@ -4,11 +4,19 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import App from './App'
 import routes from './router'
-
+import ElementUI from 'element-ui'
+import VueMaterial from 'vue-material'
+import 'element-ui/lib/theme-default/index.css'
+import 'vue-material/dist/vue-material.css'
 import '@/assets/css/main.scss'
-Vue.use(Router)
-Vue.config.productionTip = false
 
+Vue.use(Router)
+Vue.use(ElementUI)
+// Vue.use(VueMaterial)
+Vue.use(VueMaterial.MdCore) 
+Vue.use(VueMaterial.MdButton)
+
+Vue.config.productionTip = false
 const router = new Router({
 	routes
 })
