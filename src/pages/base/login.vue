@@ -1,7 +1,6 @@
 <template>
 	<section>
 		<div class="login-bg">
-			<!-- <img src="../../assets/img/login_bg.png" alt=""> -->
 			<div class="login-box">
 				<div class="login-top">
 					<img src="../../assets/img/logo.png" alt="">
@@ -77,7 +76,7 @@
 		.login-box {
 			width: 400px;
 			height: 400px;
-			// border: 1px solid #ccc;
+			margin-top: -60px;
 			text-align: center;
 			.login-content {
 				margin: 30px 0;
@@ -97,7 +96,7 @@
 		}
 	}
 	.form-group {
-		margin: 15px 0;
+		margin: 10px 0;
 		.form-input {
 			width: 100%;
 			padding: 10px 12px;

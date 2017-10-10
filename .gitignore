@@ -6,7 +6,6 @@ yarn-debug.log*
 yarn-error.log*
 api
 assets
-components
 data
 # Editor directories and files
 .idea
