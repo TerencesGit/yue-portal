@@ -98,7 +98,8 @@
 						smsCode: this.form.smsCode,
 					}
 					console.log(data)
-					this.$message('注册提交...')
+					this.$message('注册成功')
+					this.$router.push('/register_success')
 				}
 			}
 		}
