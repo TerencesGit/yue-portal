@@ -4,7 +4,7 @@
 		<div class="main">
 			<div class="flex-item">
 				<img src="../assets/img/home_about_bg.png">
-				<div class="item-title center">
+				<div class="item-title about-us">
 						<img src="../assets/img/home_about.png">
 						<router-link to="/about-us" class="link-button">
 							<img src="../assets/img/about_us.png" >
@@ -14,7 +14,7 @@
 			<div class="flex">
 				<div class="flex-item">
 					<img src="../assets/img/home_photo_bg.png">
-					<div class="item-title right">
+					<div class="item-title photo">
 						<img src="../assets/img/home_photo.png">
 						<router-link to="/detail/photography" class="link-button">
 							<img src="../assets/img/show_button.png">
@@ -23,7 +23,7 @@
 				</div> 
 				<div class="flex-item">
 					<img src="../assets/img/home_tourism_bg.png">
-					<div class="item-title left">
+					<div class="item-title tourism">
 						<img src="../assets/img/home_tourism_title.png">
 						<router-link to="/detail/tourism" class="link-button">
 							<img src="../assets/img/show_button.png">
@@ -41,16 +41,16 @@
 						</router-link>
 					</div>
 				</div>
-				<div class="flex-item flex-center system">
+				<div class="flex-item">
 					<img src="../assets/img/home_system_bg.png">
 					<div class="item-title center">
 						<img src="../assets/img/home_system.png" alt="">
 						<router-link to="/detail/photography" class="link-button">
-							<img src="../assets/img/show_button.png">
+							<img src="../assets/img/show_button_blue.png">
 						</router-link>
 					</div>
 				</div>
-				<div class="flex-item flex-center marketing">
+				<div class="flex-item">
 					<img src="../assets/img/home_marketing_bg.png" alt="">
 					<div class="item-title center">
 						<img src="../assets/img/home_marketing.png" alt="">
@@ -63,13 +63,13 @@
 			<div class="flex">
 				<div class="flex-item">
 					<img src="../assets/img/home_video_bg.png" alt="">
-					<div class="item-title center">
-						<img src="../assets/img/start_button.png" alt="">
+					<div class="item-title film">
+						<img src="../assets/img/start_button.png" class="pointer">
 					</div>
 				</div>
 				<div class="flex-item">
 					<img src="../assets/img/home_join_bg.png" alt="">
-					<div class="item-title left">
+					<div class="item-title join">
 						<img src="../assets/img/home_join_title.png">
 						<router-link to="/detail/tourism" class="link-button">
 							<img src="../assets/img/show_button.png">
@@ -99,6 +99,37 @@
 <style scoped lang="scss">
 	.flex-item {
 		position: relative;
+	}
+	.item-title {
+		&.about-us {
+			top: 35%;
+			> img {
+				width: 50%;
+			}
+			.link-button {
+				width: 30%;
+			}
+		}
+		&.photo {
+			top: 50%;
+			left: none;
+			right: 0;
+			transform: translate(0, -50%);
+			.link-button {
+				width: 60%;
+			}
+		}
+		&.tourism, &.join {
+			top: 50%;
+			left: 0;
+			transform: translate(50%, -50%);
+			.link-button {
+				width: 60%;
+			}
+		}
+		&.film {
+			width: 10%
+		}
 	}
 	.finance {
 		background: #0167B9
