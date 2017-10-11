@@ -6,9 +6,10 @@ import RegisterSuccess from '@/pages/base/register_success'
 
 const routes = [
   {
-    path: '/home',
+    path: '/',
     name: 'Home',
     component: Home
+    // redirect: '/login'
   },
   {
     path: '/',
@@ -17,7 +18,7 @@ const routes = [
     	{
     		path: 'login',
         name: '登录',
-        component: Login,
+        component: Login,  
     	},
       {
         path: 'register',
