@@ -1,19 +1,18 @@
 <template>
 	<section>
-		<HeaderComp></HeaderComp>
 		<keep-alive>
 			<transition name="slide-fade">
 				<router-view></router-view>
 			</transition>
 	  </keep-alive>
+		<FooterComp></FooterComp>
 	</section>
 </template>
 <script>
-	import HeaderComp from '@/components/Header'
+	import FooterComp from '@/components/Footer'
 	export default {
-		name: 'baseWrap',
 		components: {
-			HeaderComp
-		},
+			FooterComp
+		}
 	}
 </script>

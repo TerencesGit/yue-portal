@@ -4,37 +4,37 @@
 			<li class="nav-item">
 				<img src="../assets/img/footer_nav1.png">
 				<div class="item-show">
-					<router-link to="/item/photography" class="show-button">查看详情</router-link>
+					<router-link to="/detail/photography" class="show-button">查看详情</router-link>
 				</div>
 			</li>
 			<li class="nav-item">
 				<img src="../assets/img/footer_nav2.png">
 				<div class="item-show">
-					<router-link to="/item/tourism" class="show-button">查看详情</router-link>
+					<router-link to="/detail/tourism" class="show-button">查看详情</router-link>
 				</div>
 			</li>
 			<li class="nav-item">
 				<img src="../assets/img/footer_nav3.png">
 				<div class="item-show">
-					<router-link to="/item/finance" class="show-button">查看详情</router-link>
+					<router-link to="/detail/finance" class="show-button">查看详情</router-link>
 				</div>
 			</li>
 			<li class="nav-item">
 				<img src="../assets/img/footer_nav4.png">
 				<div class="item-show">
-					<router-link to="/item/system" class="show-button">查看详情</router-link>
+					<router-link to="/detail/system" class="show-button">查看详情</router-link>
 				</div>
 			</li>
 			<li class="nav-item">
 				<img src="../assets/img/footer_nav5.png">
 				<div class="item-show">
-					<router-link to="/item/marketing" class="show-button">查看详情</router-link>
+					<router-link to="/detail/marketing" class="show-button">查看详情</router-link>
 				</div>
 			</li>
 			<li class="nav-item">
 				<img src="../assets/img/footer_nav6.png">
 				<div class="item-show">
-					<router-link to="/item/join" class="show-button">查看详情</router-link>
+					<router-link to="/detail/join" class="show-button">查看详情</router-link>
 				</div>
 			</li>
 		</ul>
@@ -49,6 +49,7 @@
 		.footer-nav {
 			display: flex;
 			justify-content: center;
+			padding: 20px 50px;
 		  .nav-item {
 		    position: relative;
 		    &:nth-of-type(even) {
