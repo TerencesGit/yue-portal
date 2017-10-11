@@ -44,19 +44,19 @@
 				</div>
 			</div>
 			<div class="intro">
-				<img src="../assets/img/home_intro.png" alt="">
+				<img src="../assets/img/home_intro.png">
 			</div>
 		</div>
-		<footer class="footer">
-			<img src="../assets/img/yue_icon.png" alt="">
-		</footer>
+		<FooterComp></FooterComp>
 	</section>
 </template>
 <script>
 	import HeaderComp from '@/components/Header'
+	import FooterComp from '@/components/Footer'
 	export default {
 		components: {
-			HeaderComp
+			HeaderComp,
+			FooterComp
 		}
 	}
 </script>
@@ -77,10 +77,5 @@
 	}
 	.marketing {
 		background: #9DCDF3
-	}
-	.footer {
-		padding: 15px;
-		text-align: center;
-		background: #fff;
 	}
 </style>

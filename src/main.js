@@ -7,7 +7,7 @@ import routes from './router'
 import ElementUI from 'element-ui'
 import VueMaterial from 'vue-material'
 import 'element-ui/lib/theme-default/index.css'
-import 'vue-material/dist/vue-material.css'
+// import 'vue-material/dist/vue-material.css'
 import '@/assets/css/main.scss'
 
 Vue.use(Router)
