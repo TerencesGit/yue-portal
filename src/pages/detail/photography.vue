@@ -1,23 +1,19 @@
 <template>
 	<section>
-		<header class="full-header">
-			<div class="title">
-				<img src="../../assets/img/photography_logo.png">
-			</div>
-			<div class="icon-arrow-down">
-				<img src="../../assets/img/arrow_down.png">
-			</div>
-		</header>
+		<HeaderComp>
+			<img slot="header-title" src="../../assets/img/photo/photo_logo.png">
+			<img slot="scroll-button" src="../../assets/img/arrow_down.png">
+		</HeaderComp>
 		<div class="main">
 			<div class="map">
 				<img src="../../assets/img/yue_map.png">
 			</div>
 			<div class="advantage">
-				<img src="../../assets/img/photo/advantage.png" alt="">
+				<img src="../../assets/img/photo/advantage.jpg">
 			</div>
 			<div class="flex">
 				<div class="flex-item">
-					<img src="../../assets/img/photo/global_travel.png" alt="">
+					<img src="../../assets/img/photo/global_travel.png">
 				</div>
 				<div class="flex-column micro-film">
 					<div>
@@ -31,26 +27,32 @@
 					</div>
 				</div>
 			</div>
-			<div class="flex-column show">
-				<div class="show-title">
-					<img src="../../assets/img/photo/show_title.png" alt="">
-				</div>
-				<div class="flex-item">
-					<img src="../../assets/img/photo/show_native.png" alt="">
-					<router-link to="native" class="link-button">
-						<img src="../../assets/img/photo/more_button.png" alt="">
-					</router-link>
-				</div>
-				<div class="flex-item">
-					<img src="../../assets/img/photo/show_oversea.png" alt="">
-					<router-link to="oversea" class="link-button oversea">
-						<img src="../../assets/img/photo/more_button.png" alt="">
-					</router-link>
-				</div>
+			<div class="native relative">
+				<img src="../../assets/img/photo/native.jpg">
+				<router-link to="native" class="more-link">
+					<img src="../../assets/img/photo/more.png">
+				</router-link>
+			</div>
+			<div class="oversea relative">
+				<img src="../../assets/img/photo/oversea.jpg">
+				<router-link to="oversea" class="more-link oversea">
+					<img src="../../assets/img/photo/more.png">
+				</router-link>
+			</div>
+			<div class="footer">
+				<img src="../../assets/img/photo/photo_footer.jpg">
 			</div>
 		</div>
 	</section>
 </template>
+<script>
+	import HeaderComp from '@/components/Header'
+	export default {
+		components: {
+			HeaderComp,
+		},
+	}
+</script>
 <style scoped lang="scss">
 	.main {
 		background: #F5F4EF;
@@ -59,34 +61,18 @@
 		background: url(../../assets/img/photography_bg.jpg) no-repeat center;
   	background-size: cover;
 	}
-	.advantage {
-		padding: 30px 50px;
-		background: #fff;
-		img {
-      width: 100%;
-    }
-	}
 	.micro-film {
     background: #F5F4EF;
     padding: 30px;
-    // .video {
-    //   margin-top: 15px;
-    // }
   }
-  .show {
-  	padding: 50px;
-		> div {
-			margin: 30px 0;
-		}
-  }
-  .link-button {
+  .more-link {
   	position: absolute;
   	right: 28%;
-  	bottom: 0;
+  	bottom: 45px;
   	&.oversea {
-  		top: 27%;
-  		left: 20%;
+  		top: 30%;
+  		left: 25%;
+  		height: 0;
   	}
-  	// transform: translate(50%, 0);
   }
 </style>

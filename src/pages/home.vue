@@ -46,7 +46,7 @@
 					<div class="item-title center">
 						<img src="../assets/img/home_system.png" alt="">
 						<router-link to="/detail/photography" class="link-button">
-							<img src="../assets/img/show_button_blue.png">
+							<img src="../assets/img/show_button2.png">
 						</router-link>
 					</div>
 				</div>
@@ -93,7 +93,7 @@
 		components: {
 			HeaderComp,
 			FooterComp,
-		}
+		},
 	}
 </script>
 <style scoped lang="scss">

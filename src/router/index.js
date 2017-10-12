@@ -5,6 +5,7 @@ import Register from '@/pages/base/register'
 import RegisterSuccess from '@/pages/base/register_success'
 import Detail from '@/pages/detail/index'
 import Photography from '@/pages/detail/photography'
+// import PhotoNative from '@/pages/detail/photo_native'
 
 const routes = [
   {
@@ -42,7 +43,12 @@ const routes = [
         path: 'photography',
         name: 'photography',
         component: Photography,
-      }
+      },
+      // {
+      //   path: 'native',
+      //   name: 'native',
+      //   component: PhotoNative,
+      // }
     ]
   }
 ]

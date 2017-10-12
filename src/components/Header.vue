@@ -1,10 +1,14 @@
 <template>
 	<div class="full-header">
 		<div class="title">
-			<img src="../assets/img/index_logo.png" alt="悦视觉">
+			<slot name="header-title">
+				<img src="../assets/img/index_logo.png">
+			</slot>
 		</div>
 		<div class="icon-arrow-down" @click="scrollDown">
-			<img src="../assets/img/arrow_down_yue.png">
+			<slot name="scroll-button">
+				<img src="../assets/img/arrow_down_yue.png">
+			</slot>
 		</div>
 	</div>
 </template>
@@ -31,3 +35,30 @@
 		}
 	}
 </script>
+<style scoped lang="scss">
+	.full-header {
+	  position: relative;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  height: 100vh;
+	  background: url(../assets/img/index_bg.jpg) no-repeat center;
+	  background-size: cover;
+	  .icon-arrow-down {
+	    position: absolute;
+	    bottom: 10%;
+	    cursor: pointer;
+	    animation: flicker .4s ease-in-out infinite alternate;
+	  }
+	}
+	@keyframes flicker {
+	  0% { 
+	    transform: translateY(0px); 
+	    opacity: 0.5 
+	  }
+	  100% { 
+	    transform: translateY(10px); 
+	    opacity: 1 
+	  }
+	}
+</style>
