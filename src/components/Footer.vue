@@ -2,44 +2,44 @@
 	<footer class="footer">
 		<ul class="footer-nav">
 			<li class="nav-item">
-				<img src="../assets/img/footer_nav1.png">
+				<img src="../assets/img/footer/footer_nav1.png">
 				<div class="item-show">
 					<router-link to="/detail/photography" class="show-button">查看详情</router-link>
 				</div>
 			</li>
 			<li class="nav-item">
-				<img src="../assets/img/footer_nav2.png">
+				<img src="../assets/img/footer/footer_nav2.png">
 				<div class="item-show">
 					<router-link to="/detail/tourism" class="show-button">查看详情</router-link>
 				</div>
 			</li>
 			<li class="nav-item">
-				<img src="../assets/img/footer_nav3.png">
+				<img src="../assets/img/footer/footer_nav3.png">
 				<div class="item-show">
 					<router-link to="/detail/finance" class="show-button">查看详情</router-link>
 				</div>
 			</li>
 			<li class="nav-item">
-				<img src="../assets/img/footer_nav4.png">
+				<img src="../assets/img/footer/footer_nav4.png">
 				<div class="item-show">
 					<router-link to="/detail/system" class="show-button">查看详情</router-link>
 				</div>
 			</li>
 			<li class="nav-item">
-				<img src="../assets/img/footer_nav5.png">
+				<img src="../assets/img/footer/footer_nav5.png">
 				<div class="item-show">
 					<router-link to="/detail/marketing" class="show-button">查看详情</router-link>
 				</div>
 			</li>
 			<li class="nav-item">
-				<img src="../assets/img/footer_nav6.png">
+				<img src="../assets/img/footer/footer_nav6.png">
 				<div class="item-show">
 					<router-link to="/detail/join" class="show-button">查看详情</router-link>
 				</div>
 			</li>
 		</ul>
 		<div class="footer-logo">
-			<img src="../assets/img/yue_icon.png">
+			<img src="../assets/img/footer/yue_icon.png">
 		</div>
 	</footer>
 </template>
@@ -79,7 +79,7 @@
 		  }
 		}
 		.footer-logo {
-			padding: 15px;
+			padding: 0 15px 15px;
 			text-align: center;
 		}
 	}

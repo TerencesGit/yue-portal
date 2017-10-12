@@ -12,15 +12,15 @@ import '@/assets/css/main.scss'
 
 Vue.use(Router)
 Vue.use(ElementUI)
-Vue.use(VueMaterial)
+// Vue.use(VueMaterial)
 // Vue.use(VueMaterial.MdCore) 
 // Vue.use(VueMaterial.MdButton)
-Vue.material.registerTheme('default', {
-  primary: 'blue',
-  accent: 'white',
-  warn: 'orange',
-  background: 'grey'
-})
+// Vue.material.registerTheme('default', {
+//   primary: 'blue',
+//   accent: 'white',
+//   warn: 'orange',
+//   background: 'grey'
+// })
 Vue.config.productionTip = false
 const router = new Router({
 	routes

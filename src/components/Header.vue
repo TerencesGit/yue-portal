@@ -1,5 +1,5 @@
 <template>
-	<div class="g-header">
+	<div class="full-header">
 		<div class="title">
 			<img src="../assets/img/index_logo.png" alt="悦视觉">
 		</div>
@@ -13,7 +13,7 @@
 		name: 'header',
 		methods: {
 			scrollDown() {
-				let scrollHeight = document.getElementsByClassName('g-header')[0].offsetHeight;
+				let scrollHeight = document.getElementsByClassName('full-header')[0].offsetHeight;
 				let currentPosition = 0;
 				let timer = null;
 	      let gotoTop = () => {

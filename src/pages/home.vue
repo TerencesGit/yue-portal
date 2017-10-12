@@ -5,10 +5,10 @@
 			<div class="flex-item">
 				<img src="../assets/img/home_about_bg.png">
 				<div class="item-title about-us">
-						<img src="../assets/img/home_about.png">
-						<router-link to="/about-us" class="link-button">
-							<img src="../assets/img/about_us.png" >
-						</router-link>
+					<img src="../assets/img/home_about.png">
+					<router-link to="/about-us" class="link-button">
+						<img src="../assets/img/about_us.png" >
+					</router-link>
 				</div>
 			</div>
 			<div class="flex">
@@ -82,7 +82,7 @@
 			</div>
 		</div>
 		<div class="footer-logo">
-			<img src="../assets/img/yue_icon.png">
+			<img src="../assets/img/footer/yue_icon.png">
 		</div>
 	</section>
 </template>
@@ -92,7 +92,7 @@
 	export default {
 		components: {
 			HeaderComp,
-			FooterComp
+			FooterComp,
 		}
 	}
 </script>
@@ -115,6 +115,9 @@
 			left: none;
 			right: 0;
 			transform: translate(0, -50%);
+			> img {
+				width: 80%;
+			}
 			.link-button {
 				width: 60%;
 			}
@@ -123,6 +126,9 @@
 			top: 50%;
 			left: 0;
 			transform: translate(50%, -50%);
+			> img {
+				width: 80%;
+			}
 			.link-button {
 				width: 60%;
 			}
@@ -130,15 +136,6 @@
 		&.film {
 			width: 10%
 		}
-	}
-	.finance {
-		background: #0167B9
-	}
-	.system {
-		background: #F2F2F2
-	}
-	.marketing {
-		background: #9DCDF3
 	}
 	.footer-logo {
 	  padding: 15px 15px 30px;
