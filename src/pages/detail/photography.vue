@@ -13,7 +13,7 @@
 			</div>
 			<div class="flex">
 				<div class="flex-item">
-					<img src="../../assets/img/photo/global_travel.png">
+					<img src="../../assets/img/photo/global_travel.jpg">
 				</div>
 				<div class="flex-column micro-film">
 					<div>
