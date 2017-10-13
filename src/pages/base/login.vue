@@ -17,7 +17,7 @@
 							<input type="password" v-model.trim="form.password" class="form-input"  placeholder="您的密码" required>
 						</div>
 						<div class="form-group">
-							<md-button type="submit" class="md-raised md-primary" @click="submitForm">登 录</md-button>
+							<el-button native-type="submit" type="primary" @click="submitForm">登 录</el-button>
 						</div>
 					</form>
 					<div class="login-tip">
@@ -102,10 +102,10 @@
 			font-size: 18px;
 			color: #666;
 		}
-		.md-button {
+		.el-button {
 			width: 100%;
-			padding: 5px 10px;
-			margin: 0;
+			margin-top: 10px;
+			border-radius: 0;
 			color: #fff;
 			font-size: 18px;
 		}

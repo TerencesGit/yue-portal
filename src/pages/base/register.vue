@@ -36,7 +36,7 @@
 							<button class="form-item__button" :disabled="disabled" @click="getSmsCode">{{buttonText}}</button>
 						</div>
 						<div class="form-item submit">
-							<md-button type="submit" class="md-raised md-primary" @click="submitForm">立即注册</md-button>
+							<el-button native-type="submit" type="primary" @click="submitForm">立即注册</el-button>
 						</div>
 					</form>
 				</div>
@@ -136,11 +136,12 @@
 		margin: 10px 0;
 		border: 1px solid #999;
 		&.submit {
+			height: auto;
 			padding: 0;
 			border: 0;
-			.md-button {
+			.el-button {
 				width: 100%;
-				margin: 0;
+				margin-top: 10px;
 				border-radius: 0;
 			}
 		}

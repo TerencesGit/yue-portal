@@ -6,6 +6,8 @@ import RegisterSuccess from '@/pages/base/register_success'
 import Detail from '@/pages/detail/index'
 import Photography from '@/pages/detail/photography'
 import PhotoNative from '@/pages/detail/photo_native'
+import PhotoOversea from '@/pages/detail/photo_oversea'
+import Tourism from '@/pages/detail/tourism'
 
 const routes = [
   {
@@ -48,7 +50,17 @@ const routes = [
         path: 'native',
         name: 'native',
         component: PhotoNative,
-      }
+      },
+      {
+        path: 'oversea',
+        name: 'oversea',
+        component: PhotoOversea,
+      },
+      {
+        path: 'tourism',
+        name: 'tourism',
+        component: Tourism,
+      },
     ]
   }
 ]

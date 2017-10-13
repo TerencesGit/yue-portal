@@ -3,28 +3,30 @@
 		<div class="logo">
 			<img src="../assets/img/aside_logo.png" @click="toggleShow">
 		</div>
-		<nav v-show="navShow">
-			<ul class="nav-list">
-				<li>
-					<router-link to="photography">旅拍服务</router-link>
-				</li>
-				<li>
-					<router-link to="tourism">旅游服务</router-link>
-				</li>
-				<li>
-					<router-link to="finance">金融服务</router-link>
-				</li>
-				<li>
-					<router-link to="system">系统服务</router-link>
-				</li>
-				<li>
-					<router-link to="marketing">营销服务</router-link>
-				</li>
-				<li>
-					<router-link to="join">如何加盟</router-link>
-				</li>
-			</ul>
-		</nav>
+		<transition name="slide-fade">
+			<nav v-show="navShow">
+				<ul class="nav-list">
+					<li>
+						<router-link to="photography">旅拍服务</router-link>
+					</li>
+					<li>
+						<router-link to="tourism">旅游服务</router-link>
+					</li>
+					<li>
+						<router-link to="finance">金融服务</router-link>
+					</li>
+					<li>
+						<router-link to="system">系统服务</router-link>
+					</li>
+					<li>
+						<router-link to="marketing">营销服务</router-link>
+					</li>
+					<li>
+						<router-link to="join">如何加盟</router-link>
+					</li>
+				</ul>
+			</nav>
+		</transition>
 	</aside>
 </template>
 <script>
@@ -76,5 +78,9 @@
 				width: 100%;
 			}
 		}
+	}
+	.slide-fade-enter, .slide-fade-leave-to {
+	  transform: translateY(-10px);
+	  opacity: 0;
 	}
 </style>

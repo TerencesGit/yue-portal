@@ -1,6 +1,8 @@
 <template>
 	<section>
-		<AsideComp :show="asideShow"></AsideComp>
+		<transition name="slide-fade">
+			<AsideComp :show="asideShow"></AsideComp>
+		</transition>
 		<keep-alive>
 			<transition name="slide-fade">
 				<router-view></router-view>

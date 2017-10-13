@@ -51,6 +51,9 @@
 		components: {
 			HeaderComp,
 		},
+		mounted() {
+			window.scrollTo(0, 0);
+		}
 	}
 </script>
 <style scoped lang="scss">

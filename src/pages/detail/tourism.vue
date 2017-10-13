@@ -1,0 +1,147 @@
+<template>
+	<section>
+		<header class="header"></header>
+		<div class="main">
+			<div class="main-center">
+				<div class="main-title">
+					<!-- <img src="../../assets/img/tourism/oversea_title.png" alt=""> -->
+				</div>
+				<div class="row">
+					<div class="col">
+						<img src="../../assets/img/tourism/tourism_pic1.png" alt="">
+					</div>
+					<div class="col">
+						<img src="../../assets/img/tourism/tourism_pic1.png" alt="">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<img src="../../assets/img/tourism/tourism_pic2.png" alt="">
+					</div>
+					<div class="col">
+						<img src="../../assets/img/tourism/tourism_pic2.png" alt="">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<img src="../../assets/img/tourism/tourism_pic3.png" alt="">
+					</div>
+					<div class="col">
+						<img src="../../assets/img/tourism/tourism_pic3.png" alt="">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<img src="../../assets/img/tourism/tourism_pic4.png" alt="">
+					</div>
+					<div class="col">
+						<img src="../../assets/img/tourism/tourism_pic4.png" alt="">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<img src="../../assets/img/tourism/tourism_pic5.png" alt="">
+					</div>
+					<div class="col">
+						<img src="../../assets/img/tourism/tourism_pic5.png" alt="">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<img src="../../assets/img/tourism/tourism_pic6.png" alt="">
+					</div>
+					<div class="col">
+						<img src="../../assets/img/tourism/tourism_pic6.png" alt="">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<img src="../../assets/img/tourism/tourism_pic7.png" alt="">
+					</div>
+					<div class="col">
+						<img src="../../assets/img/tourism/tourism_pic7.png" alt="">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<img src="../../assets/img/tourism/tourism_pic8.png" alt="">
+					</div>
+					<div class="col">
+						<img src="../../assets/img/tourism/tourism_pic8.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="banner">
+				<img src="../../assets/img/tourism/yue_banner.png" alt="">
+			</div>
+			<div class="view">
+				<img src="../../assets/img/tourism/view.png" alt="">
+			</div>
+			<div class="map">
+				<img src="../../assets/img/yue_map.png" alt="">
+			</div>
+		</div>
+	</section>
+</template>
+<script>
+	export default {
+		mounted() {
+			window.scrollTo(0, 0);
+		}
+	}
+</script>
+<style scoped lang="scss">
+	.header {
+		height: 100vh;
+		background: url(../../assets/img/tourism/banner.png) no-repeat center;
+		background-size: 100% 100%;
+	}
+	.main {
+		background: #F5F4EF;
+		> div {
+			margin: 60px 0;
+		}
+		.main-center {
+			width: 80%;
+			margin: 0 auto 100px;
+			position: relative;
+			z-index: 1;
+			text-align: center;
+		}
+		.main-title {
+			padding: 30px 0;
+		}
+		.row {
+			display: flex;
+			width: 100%;
+			&:nth-of-type(even) {
+				.col:first-child {
+					width: calc(50% + 5px);
+				}
+				.col:last-child {
+					width: calc(50% - 5px);
+				}
+			}
+			&:nth-of-type(odd) {
+				.col:first-child {
+					width: calc(50% - 5px);
+				}
+				.col:last-child {
+					width: calc(50% + 5px);
+				}
+			}
+			.col {
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+		.map {
+			margin-bottom: 0;
+		}
+	}
+	.view {
+		text-align: center;
+	}
+</style>

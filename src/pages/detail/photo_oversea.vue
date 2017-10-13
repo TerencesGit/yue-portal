@@ -1,33 +1,33 @@
 <template>
 	<section>
 		<header class="header">
-			<img src="../../assets/img/photo/native_head.png" alt="">
+			<img src="../../assets/img/photo/oversea_head.png" alt="">
 		</header>
 		<div class="main">
 			<div class="main-center">
 				<div class="main-title">
-					<img src="../../assets/img/photo/native_title.png" alt="">
+					<img src="../../assets/img/photo/oversea_title.png" alt="">
 				</div>
 				<div>
-					<img src="../../assets/img/photo/native_show1.png" alt="">
+					<img src="../../assets/img/photo/oversea_show1.png" alt="">
 				</div>
 				<div>
-					<img src="../../assets/img/photo/native_show2.png" alt="">
+					<img src="../../assets/img/photo/oversea_show2.png" alt="">
 				</div>
 				<div>
-					<img src="../../assets/img/photo/native_show3.png" alt="">
+					<img src="../../assets/img/photo/oversea_show3.png" alt="">
 				</div>
 				<div>
-					<img src="../../assets/img/photo/native_show4.png" alt="">
+					<img src="../../assets/img/photo/oversea_show4.png" alt="">
 				</div>
 				<div>
-					<img src="../../assets/img/photo/native_show5.png" alt="">
+					<img src="../../assets/img/photo/oversea_show5.png" alt="">
 				</div>
 				<div>
-					<img src="../../assets/img/photo/native_show6.png" alt="">
+					<img src="../../assets/img/photo/oversea_show6.png" alt="">
 				</div>
 				<div>
-					<img src="../../assets/img/photo/native_show7.png" alt="">
+					<img src="../../assets/img/photo/oversea_show7.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -35,7 +35,7 @@
 </template>
 <script>
 	export default {
-		mounted() {
+		mounted () {
 			window.scrollTo(0, 0);
 		}
 	}
@@ -46,7 +46,6 @@
 	}
 	.main {
 		background: url(../../assets/img/photo/photo_bg.png) repeat center;
-		background-size: fixed;
 		.main-center {
 			width: 80%;
 			margin: 0 auto;
