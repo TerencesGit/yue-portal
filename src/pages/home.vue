@@ -6,7 +6,7 @@
 				<img src="../assets/img/home_about_bg.png">
 				<div class="item-title about-us">
 					<img src="../assets/img/home_about.png">
-					<router-link to="/about-us" class="link-button">
+					<router-link to="/detail/join" class="link-button">
 						<img src="../assets/img/about_us.png" >
 					</router-link>
 				</div>
@@ -36,7 +36,7 @@
 					<img src="../assets/img/home_finance_bg.png">
 					<div class="item-title center">
 						<img src="../assets/img/home_finance_title.png" alt="">
-						<router-link to="/detail/photography" class="link-button">
+						<router-link to="/detail/finance" class="link-button">
 							<img src="../assets/img/show_button.png">
 						</router-link>
 					</div>
@@ -45,7 +45,7 @@
 					<img src="../assets/img/home_system_bg.png">
 					<div class="item-title center">
 						<img src="../assets/img/home_system.png" alt="">
-						<router-link to="/detail/photography" class="link-button">
+						<router-link to="/detail/system" class="link-button">
 							<img src="../assets/img/show_button2.png">
 						</router-link>
 					</div>
@@ -54,7 +54,7 @@
 					<img src="../assets/img/home_marketing_bg.png" alt="">
 					<div class="item-title center">
 						<img src="../assets/img/home_marketing.png" alt="">
-						<router-link to="/detail/photography" class="link-button">
+						<router-link to="/detail/marketing" class="link-button">
 							<img src="../assets/img/show_button.png">
 						</router-link>
 					</div>
@@ -71,7 +71,7 @@
 					<img src="../assets/img/home_join_bg.png" alt="">
 					<div class="item-title join">
 						<img src="../assets/img/home_join_title.png">
-						<router-link to="/detail/tourism" class="link-button">
+						<router-link to="/detail/join" class="link-button">
 							<img src="../assets/img/show_button.png">
 						</router-link>
 					</div>

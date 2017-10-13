@@ -30,8 +30,32 @@
 				</nav>
 			</transition>
 		</aside>
-		<el-dialog :visible.sync="formVisible">
-			<div slot="title">加盟我们</div>
+		<el-dialog :visible.sync="formVisible" :show-close="false" size="tiny">
+			<div slot="title" class="dialog-title">
+				<h2>加盟我们</h2>
+			</div>
+			<form onsubmit="return false">
+					<div class="form-item">
+						<label class="form-item__label">姓名</label>
+						<input type="text" v-model="form.name" class="form-item__input" required>
+					</div>
+					<div class="form-item">
+						<label class="form-item__label">联系方式</label>
+						<input type="text" v-model="form.mobile" class="form-item__input" required>
+					</div>
+					<div class="form-item">
+						<label class="form-item__label">企业名称</label>
+						<input type="text" v-model="form.partnerName" class="form-item__input" required>
+					</div>
+					<div class="form-item textarea">
+						<label class="form-item__label">备注</label>
+						<textarea rows="3" v-model="form.note"></textarea>
+					</div>
+					<div class="form-item submit">
+						<el-button native-type="reset" @click="formVisible = false">取消</el-button>
+						<el-button native-type="submit" type="primary" @click="submitForm">提交</el-button>
+					</div>
+				</form>
 		</el-dialog>
 	</section>
 </template>
@@ -47,8 +71,11 @@
 		data () {
 			return {
 				navShow: true,
-				joinForm: {
-
+				form: {
+					name: '',
+					mobile: '',
+					partnerName: '',
+					note: ''
 				},
 				formVisible: false,
 
@@ -60,6 +87,12 @@
 			},
 			handleJoin() {
 				this.formVisible = true;
+			},
+			submitForm () {
+				if(this.form.name && this.form.mobile && this.form.partnerName) {
+					let data = Object.assign({}, this.form)
+					console.log(data)
+				}
 			}
 		}
 	}
@@ -104,6 +137,29 @@
 			a {
 				display: inline-block;
 				width: 100%;
+			}
+			span {
+				cursor: pointer;
+			}
+		}
+	}
+	.dialog-title {
+		text-align: center;
+		color: #2DAEB9;
+		font-size: 20px;
+	}
+	.form-item {
+		&.submit {
+			margin-top: 30px;
+		}
+		&.textarea {
+			height: 76px;
+			textarea {
+				flex: 1;
+				border: none;
+				outline: none;
+				resize: none;
+				background: transparent;
 			}
 		}
 	}

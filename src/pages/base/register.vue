@@ -129,39 +129,4 @@
 			}
 		}
 	}
-	.form-item {
-		display: flex;
-		height: 38px;
-		padding: 6px 0;
-		margin: 10px 0;
-		border: 1px solid #999;
-		&.submit {
-			height: auto;
-			padding: 0;
-			border: 0;
-			.el-button {
-				width: 100%;
-				margin-top: 10px;
-				border-radius: 0;
-			}
-		}
-		.form-item__label {
-			// width: 100px;
-			margin: 0 15px;
-			text-align: left;
-			color: #888;
-			font-size: 15px;
-		}
-		.form-item__input {
-			width: 40%;
-			flex: 1;
-			color: #666;
-			font-size: 16px;
-			background: transparent;
-		}
-		.form-item__button {
-			height: 36px;
-			margin-top: -6px;
-		}
-	}
 </style>

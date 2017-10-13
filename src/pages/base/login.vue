@@ -37,6 +37,7 @@
 	</section>
 </template>
 <script>
+	import { requestLogin } from '@/api'
 	import Md5 from '@/assets/js/md5'
 	export default {
 		data () {
@@ -59,6 +60,9 @@
 						password: Md5.hex_md5(this.form.password)
 					}
 					console.log(data)
+					requestLogin(data).then(res => {
+						console.log(res)
+					})
 					this.$message('登录中...')
 				}
 			}
