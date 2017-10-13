@@ -2,7 +2,7 @@
 	<section>
 		<HeaderComp></HeaderComp>
 		<keep-alive>
-			<transition name="slide-fade">
+			<transition name="fade">
 				<router-view></router-view>
 			</transition>
 	  </keep-alive>

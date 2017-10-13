@@ -1,31 +1,39 @@
 <template>
-	<aside class="aside" v-show="show">
-		<div class="logo">
-			<span @click="toggleShow"></span>
-		</div>
-		<nav v-show="navShow">
-			<ul class="nav-list">
-				<li>
-					<router-link to="photography">旅拍服务</router-link>
-				</li>
-				<li>
-					<router-link to="tourism">旅游服务</router-link>
-				</li>
-				<li>
-					<router-link to="finance">金融服务</router-link>
-				</li>
-				<li>
-					<router-link to="system">系统服务</router-link>
-				</li>
-				<li>
-					<router-link to="marketing">营销服务</router-link>
-				</li>
-				<li>
-					<router-link to="join">如何加盟</router-link>
-				</li>
-			</ul>
-		</nav>
-	</aside>
+	<section>
+		<aside class="aside" v-show="show">
+			<div class="logo">
+				<span @click="toggleShow"></span>
+			</div>
+			<transition name="slide-fade">
+				<nav v-show="navShow">
+					<ul class="nav-list">
+						<li>
+							<router-link to="photography">旅拍服务</router-link>
+						</li>
+						<li>
+							<router-link to="tourism">旅游服务</router-link>
+						</li>
+						<li>
+							<router-link to="finance">金融服务</router-link>
+						</li>
+						<li>
+							<router-link to="system">系统服务</router-link>
+						</li>
+						<li>
+							<router-link to="marketing">营销服务</router-link>
+						</li>
+						<li>
+							<!-- <router-link to="join">如何加盟</router-link> -->
+							<span @click="handleJoin">加盟我们</span>
+						</li>
+					</ul>
+				</nav>
+			</transition>
+		</aside>
+		<el-dialog :visible.sync="formVisible">
+			<div slot="title">加盟我们</div>
+		</el-dialog>
+	</section>
 </template>
 <script>
 	export default {
@@ -39,11 +47,19 @@
 		data () {
 			return {
 				navShow: true,
+				joinForm: {
+
+				},
+				formVisible: false,
+
 			}
 		},
 		methods: {
 			toggleShow() {
 				this.navShow = !this.navShow;
+			},
+			handleJoin() {
+				this.formVisible = true;
 			}
 		}
 	}

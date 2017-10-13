@@ -1,10 +1,8 @@
 <template>
 	<section>
-		<transition name="slide-fade">
-			<AsideComp :show="asideShow"></AsideComp>
-		</transition>
+		<AsideComp :show="asideShow"></AsideComp>
 		<keep-alive>
-			<transition name="slide-fade">
+			<transition name="fade">
 				<router-view></router-view>
 			</transition>
 	  </keep-alive>
