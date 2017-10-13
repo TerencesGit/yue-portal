@@ -8,6 +8,9 @@ import Photography from '@/pages/detail/photography'
 import PhotoNative from '@/pages/detail/photo_native'
 import PhotoOversea from '@/pages/detail/photo_oversea'
 import Tourism from '@/pages/detail/tourism'
+import Finance from '@/pages/detail/finance'
+import System from '@/pages/detail/system'
+import Marketing from '@/pages/detail/marketing'
 
 const routes = [
   {
@@ -60,6 +63,21 @@ const routes = [
         path: 'tourism',
         name: 'tourism',
         component: Tourism,
+      },
+      {
+        path: 'finance',
+        name: 'finance',
+        component: Finance,
+      },
+      {
+        path: 'system',
+        name: 'system',
+        component: System,
+      },
+      {
+        path: 'marketing',
+        name: 'marketing',
+        component: Marketing,
       },
     ]
   }

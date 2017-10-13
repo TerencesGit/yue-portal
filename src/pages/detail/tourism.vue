@@ -4,71 +4,17 @@
 		<div class="main">
 			<div class="main-center">
 				<div class="main-title">
-					<!-- <img src="../../assets/img/tourism/oversea_title.png" alt=""> -->
+					<img src="../../assets/img/tourism/tourism_title.png" alt="">
 				</div>
-				<div class="row">
-					<div class="col">
-						<img src="../../assets/img/tourism/tourism_pic1.png" alt="">
-					</div>
-					<div class="col">
-						<img src="../../assets/img/tourism/tourism_pic1.png" alt="">
-					</div>
-				</div>
-				<div class="row">
-					<div class="col">
-						<img src="../../assets/img/tourism/tourism_pic2.png" alt="">
-					</div>
-					<div class="col">
-						<img src="../../assets/img/tourism/tourism_pic2.png" alt="">
-					</div>
-				</div>
-				<div class="row">
-					<div class="col">
-						<img src="../../assets/img/tourism/tourism_pic3.png" alt="">
-					</div>
-					<div class="col">
-						<img src="../../assets/img/tourism/tourism_pic3.png" alt="">
-					</div>
-				</div>
-				<div class="row">
-					<div class="col">
-						<img src="../../assets/img/tourism/tourism_pic4.png" alt="">
-					</div>
-					<div class="col">
-						<img src="../../assets/img/tourism/tourism_pic4.png" alt="">
-					</div>
-				</div>
-				<div class="row">
-					<div class="col">
-						<img src="../../assets/img/tourism/tourism_pic5.png" alt="">
-					</div>
-					<div class="col">
-						<img src="../../assets/img/tourism/tourism_pic5.png" alt="">
-					</div>
-				</div>
-				<div class="row">
-					<div class="col">
-						<img src="../../assets/img/tourism/tourism_pic6.png" alt="">
-					</div>
-					<div class="col">
-						<img src="../../assets/img/tourism/tourism_pic6.png" alt="">
-					</div>
-				</div>
-				<div class="row">
-					<div class="col">
-						<img src="../../assets/img/tourism/tourism_pic7.png" alt="">
-					</div>
-					<div class="col">
-						<img src="../../assets/img/tourism/tourism_pic7.png" alt="">
-					</div>
-				</div>
-				<div class="row">
-					<div class="col">
-						<img src="../../assets/img/tourism/tourism_pic8.png" alt="">
-					</div>
-					<div class="col">
-						<img src="../../assets/img/tourism/tourism_pic8.png" alt="">
-					</div>
+				<div class="text-center">
+					<img src="../../assets/img/tourism/tourism_pic1.png" alt="">
+					<img src="../../assets/img/tourism/tourism_pic2.png" alt="">
+					<img src="../../assets/img/tourism/tourism_pic3.png" alt="">
+					<img src="../../assets/img/tourism/tourism_pic4.png" alt="">
+					<img src="../../assets/img/tourism/tourism_pic5.png" alt="">
+					<img src="../../assets/img/tourism/tourism_pic6.png" alt="">
+					<img src="../../assets/img/tourism/tourism_pic7.png" alt="">
+					<img src="../../assets/img/tourism/tourism_pic8.png" alt="">
 				</div>
 			</div>
 			<div class="banner">
@@ -109,7 +55,7 @@
 			text-align: center;
 		}
 		.main-title {
-			padding: 30px 0;
+			padding: 50px 0;
 		}
 		.row {
 			display: flex;

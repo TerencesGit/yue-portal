@@ -1,32 +1,30 @@
 <template>
 	<aside class="aside" v-show="show">
 		<div class="logo">
-			<img src="../assets/img/aside_logo.png" @click="toggleShow">
+			<span @click="toggleShow"></span>
 		</div>
-		<transition name="slide-fade">
-			<nav v-show="navShow">
-				<ul class="nav-list">
-					<li>
-						<router-link to="photography">旅拍服务</router-link>
-					</li>
-					<li>
-						<router-link to="tourism">旅游服务</router-link>
-					</li>
-					<li>
-						<router-link to="finance">金融服务</router-link>
-					</li>
-					<li>
-						<router-link to="system">系统服务</router-link>
-					</li>
-					<li>
-						<router-link to="marketing">营销服务</router-link>
-					</li>
-					<li>
-						<router-link to="join">如何加盟</router-link>
-					</li>
-				</ul>
-			</nav>
-		</transition>
+		<nav v-show="navShow">
+			<ul class="nav-list">
+				<li>
+					<router-link to="photography">旅拍服务</router-link>
+				</li>
+				<li>
+					<router-link to="tourism">旅游服务</router-link>
+				</li>
+				<li>
+					<router-link to="finance">金融服务</router-link>
+				</li>
+				<li>
+					<router-link to="system">系统服务</router-link>
+				</li>
+				<li>
+					<router-link to="marketing">营销服务</router-link>
+				</li>
+				<li>
+					<router-link to="join">如何加盟</router-link>
+				</li>
+			</ul>
+		</nav>
 	</aside>
 </template>
 <script>
@@ -57,11 +55,18 @@
 		left: 0;
 		z-index: 999;
 		width: 120px;
-	}
-	.logo {
-		padding: 10px;
-		text-align: center;
-		background: #028AEE;
+		.logo {
+			padding: 10px;
+			text-align: center;
+			background: #028AEE;
+			span {
+				display: inline-block;
+				width: 41px;
+				height: 41px;
+				cursor: pointer;
+				background: url(../assets/img/aside_logo.png) no-repeat center;
+			}
+		}
 	}
 	.nav-list {
 		text-align: center;
@@ -70,6 +75,13 @@
 			padding: 5px;
 			font-size: 16px;
 			letter-spacing: 4px;
+			// border-bottom: 1px solid #9CCEF3;
+			// &:last-child {
+			// 	border-bottom: none;
+			// }
+			// &:hover, &.active {
+			// 	background: #9CCEF3
+			// }
 			&:nth-of-type(even) {
 				background: #9CCEF3
 			}
@@ -78,9 +90,5 @@
 				width: 100%;
 			}
 		}
-	}
-	.slide-fade-enter, .slide-fade-leave-to {
-	  transform: translateY(-10px);
-	  opacity: 0;
 	}
 </style>
