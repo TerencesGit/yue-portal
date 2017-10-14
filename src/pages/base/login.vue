@@ -17,7 +17,7 @@
 							<input type="password" v-model.trim="form.password" class="form-input"  placeholder="您的密码" required>
 						</div>
 						<div class="form-group">
-							<el-button native-type="submit" type="primary" @click="submitForm">登 录</el-button>
+							<el-button native-type="submit" type="primary" @click="submitForm" :loading="loading">登 录</el-button>
 						</div>
 					</form>
 					<div class="login-tip">
@@ -39,6 +39,7 @@
 <script>
 	import { requestLogin } from '@/api'
 	import Md5 from '@/assets/js/md5'
+	import Utils from '@/assets/js/utils'
 	export default {
 		data () {
 			return {
@@ -46,6 +47,7 @@
 					username: '',
 					password: '',
 				},
+				loading: false,
 				autoLogin: false,
 			}
 		},
@@ -59,13 +61,34 @@
 						username: this.form.username,
 						password: Md5.hex_md5(this.form.password)
 					}
-					console.log(data)
+					this.loading = true;
 					requestLogin(data).then(res => {
-						console.log(res)
+						this.loading = false;
+						if(res.data.code === '0001') {
+							let user = {
+                name: escape(btoa(data.username)),
+                pwd: escape(btoa(this.form.password)),
+              }
+              let userId = res.data.result.userInfo.userId
+              localStorage.setItem('user', JSON.stringify(user))
+              Utils.setCookie('userId', userId)
+							this.$router.push('/')
+							// this.$message.success('登录成功')
+						} else {
+							this.$message.error(res.data.message)
+						}
+					}).catch(err => {
+						console.log(err)
 					})
-					this.$message('登录中...')
 				}
 			}
+		},
+		mounted() {
+			let user = JSON.parse(localStorage.getItem('user'))
+	    if(user && user.name && user.pwd) {
+	      this.form.username = atob(unescape(user.name))
+	      this.form.password = atob(unescape(user.pwd))
+	    }
 		}
 	}
 </script>

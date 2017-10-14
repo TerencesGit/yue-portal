@@ -7,7 +7,7 @@
 			<div class="flex">
 				<div class="flex-item">
 					<img src="../../assets/img/join/intro1.png">
-					<router-link to="#" class="link-button">
+					<router-link to="photography" class="link-button">
 						<img src="../../assets/img/join/button.png" class="btn-sm">
 					</router-link>
 				</div>
@@ -16,7 +16,7 @@
 				</div>
 				<div class="flex-item">
 					<img src="../../assets/img/join/intro3.png">
-					<router-link to="#" class="link-button">
+					<router-link to="tourism" class="link-button">
 						<img src="../../assets/img/join/button.png" class="btn-sm">
 					</router-link>
 				</div>
@@ -27,7 +27,7 @@
 				</div>
 				<div class="flex-item">
 					<img src="../../assets/img/join/intro5.png">
-					<router-link to="#" class="link-button">
+					<router-link to="finance" class="link-button">
 						<img src="../../assets/img/join/button.png" class="btn-sm">
 					</router-link>
 				</div>
@@ -38,7 +38,7 @@
 			<div class="flex">
 				<div class="flex-item">
 					<img src="../../assets/img/join/intro7.png">
-					<router-link to="#" class="link-button">
+					<router-link to="system" class="link-button">
 						<img src="../../assets/img/join/button.png" class="btn-sm">
 					</router-link>
 				</div>
@@ -47,7 +47,7 @@
 				</div>
 				<div class="flex-item">
 					<img src="../../assets/img/join/intro9.png">
-					<router-link to="#" class="link-button">
+					<router-link to="marketing" class="link-button">
 						<img src="../../assets/img/join/button.png" class="btn-sm">
 					</router-link>
 				</div>

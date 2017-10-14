@@ -60,6 +60,7 @@
 	</section>
 </template>
 <script>
+	import { createJoinInfo } from '@/api'
 	export default {
 		name: 'Aside',
 		props: {
@@ -78,20 +79,43 @@
 					note: ''
 				},
 				formVisible: false,
-
+				submited: false,
 			}
 		},
 		methods: {
 			toggleShow() {
-				this.navShow = !this.navShow;
+				// this.navShow = !this.navShow;
+				this.$router.push('/')
 			},
 			handleJoin() {
-				this.formVisible = true;
+				if (this.submited) {
+					this.$notify({
+						type: 'warning',
+						title: '提示',
+						message: '已提交加盟信息，请等待管理员联系'
+					})
+				} else {
+					this.formVisible = true;
+				}
 			},
 			submitForm () {
 				if(this.form.name && this.form.mobile && this.form.partnerName) {
 					let data = Object.assign({}, this.form)
 					console.log(data)
+					createJoinInfo(data).then(res => {
+						console.log(res)
+						if(res.data.code === '0001') {
+							this.submited = true;
+							this.$message.success('提交成功，请等待管理员联系')
+						} else {
+							this.$message.error(res.data.message)
+						}
+						this.formVisible = false;
+					}).catch(err => {
+						this.formVisible = false;
+						console.log(err)
+						this.$catchError(err)
+					})
 				}
 			}
 		}
@@ -139,12 +163,13 @@
 				width: 100%;
 			}
 			span {
+				color: #337ab7;
 				cursor: pointer;
 			}
 		}
 	}
 	.dialog-title {
-		text-align: center;
+		// text-align: center;
 		color: #2DAEB9;
 		font-size: 20px;
 	}

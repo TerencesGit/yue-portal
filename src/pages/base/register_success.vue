@@ -6,7 +6,7 @@
 					<img src="../../assets/img/logo.png" alt="">
 				</div>
 				<div class="login-content">
-					<h3><img src="../../assets/img/success.jpg" alt="">恭喜您注册成功！</h3>
+					<h3><img src="../../assets/img/success.jpg" alt="">恭喜您，注册成功！</h3>
 					<p>请稍后，工作人员马上与您联系</p>
 					<p>我们将确认身份后给予登录账号</p>
 					<p>{{count}}秒后自动跳转登录页.......</p>
@@ -19,14 +19,6 @@
 	export default {
 		data () {
 			return {
-				form: {
-					partnerName: '',
-					partnerSite: '',
-					contactName: '',
-					titleName: '',
-					mobile: '',
-					smsCode: '',
-				},
 				count: 5,
 			}
 		},
@@ -42,23 +34,9 @@
 					}
 				}, 1000)	
 			},
-			submitForm() {
-				if(this.form.partnerName && this.form.contactName && this.form.titleName && this.form.mobile && this.form.smsCode) {
-					let data = {
-						partnerName: this.form.partnerName,
-						partnerSite: this.form.partnerSite,
-						contactName: this.form.contactName,
-						titleName: this.form.contactName,
-						mobile: this.form.mobile,
-						smsCode: this.form.smsCode,
-					}
-					console.log(data)
-					this.$message('注册提交...')
-				}
-			}
 		},
 		mounted () {
-			// this.countDown()
+			this.countDown()
 		}
 	}
 </script>

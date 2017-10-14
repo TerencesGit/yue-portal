@@ -45,8 +45,7 @@
 		height: 90vh;
 	}
 	.main {
-		background: url(../../assets/img/photo/photo_bg.png) repeat center;
-		background-size: fixed;
+		background: url(../../assets/img/photo/wave_bg.png) repeat center fixed;
 		.main-center {
 			width: 80%;
 			margin: 0 auto;
@@ -57,6 +56,14 @@
 			background: #F5F4EF;
 			> div {
 				margin: 8px 0;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				&:not(.main-title) {
+					img {
+						width: 100%;
+					}
+				}
 			}
 		}
 		.main-title {

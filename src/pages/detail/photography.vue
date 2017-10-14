@@ -11,11 +11,11 @@
 			<div class="advantage">
 				<img src="../../assets/img/photo/advantage.jpg">
 			</div>
-			<div class="flex">
-				<div class="flex-item">
+			<div class="row">
+				<div class="col">
 					<img src="../../assets/img/photo/global_travel.jpg">
 				</div>
-				<div class="flex-column micro-film">
+				<div class="col micro-film">
 					<div>
 						<img src="../../assets/img/photo/film_title.png">
 					</div>
@@ -57,25 +57,38 @@
 	}
 </script>
 <style scoped lang="scss">
-	.main {
-		background: #F5F4EF;
-	}
 	.full-header {
-		background: url(../../assets/img/photography_bg.jpg) no-repeat center;
+		background: url(../../assets/img/photo/photography_bg.jpg) no-repeat center;
   	background-size: cover;
 	}
 	.micro-film {
-    background: #F5F4EF;
+		display: flex;
+	  flex-direction: column;
+	  justify-content: space-around;
+	  align-items: center;
     padding: 30px;
+    background: #F5F4EF;
+    .video {
+    	width: 100%;
+    	video {
+    		width: 100%;
+    	}
+    }
   }
   .more-link {
   	position: absolute;
   	right: 28%;
-  	bottom: 45px;
+  	bottom: 50px;
   	&.oversea {
   		top: 30%;
   		left: 25%;
   		height: 0;
+  	}
+  }
+  .row {
+  	display: flex;
+  	.col {
+			width: 50%;
   	}
   }
 </style>

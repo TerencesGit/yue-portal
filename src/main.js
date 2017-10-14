@@ -7,18 +7,41 @@ import App from './App'
 import routes from './router'
 import Mock from './mock'
 import ElementUI from 'element-ui'
-import VueMaterial from 'vue-material'
 import 'element-ui/lib/theme-default/index.css'
 import '@/assets/css/main.scss'
 
 Vue.use(Router)
 Vue.use(ElementUI)
 Mock.bootstrap()
+Vue.prototype.$catchError = (err) => {
+  if(!err.data) {
+    ElementUI.Message('服务器响应错误')
+    return;
+  }
+  if(err.data.code) {
+    ElementUI.Message(err.data.message)
+  } else {
+    ElementUI.Message('服务器响应超时')
+  }
+}
 Vue.config.productionTip = false
 const router = new Router({
 	routes
 })
-
+axios.interceptors.request.use(config => {
+  return config;
+}, error => { 
+  return Promise.reject(error)
+})
+axios.interceptors.response.use(res => {
+  if (res.data.code === '0000') {
+    router.push('/login')
+    // return Promise.reject(res)
+  } 
+  return res;
+}, err => {
+  return Promise.reject(err)
+})
 /* eslint-disable no-new */
 new Vue({
   router,

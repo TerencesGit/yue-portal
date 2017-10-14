@@ -33,7 +33,7 @@
 						<div class="form-item">
 							<label class="form-item__label">手机验证码</label>
 							<input type="text" v-model="form.smsCode" class="form-item__input"  required>
-							<button class="form-item__button" :disabled="disabled" @click="getSmsCode">{{buttonText}}</button>
+							<button type="button" class="form-item__button" :disabled="disabled" @click="getSmsCode">{{buttonText}}</button>
 						</div>
 						<div class="form-item submit">
 							<el-button native-type="submit" type="primary" @click="submitForm">立即注册</el-button>
@@ -45,6 +45,7 @@
 	</section>
 </template>
 <script>
+	import { requestRegist, getMobileSmsCode } from '@/api'
 	export default {
 		data () {
 			return {
@@ -84,8 +85,19 @@
 					})
 					return;
 				}
-				this.countDown();
-				console.log(this.form.mobile)
+				let params ={
+					mobile: this.form.mobile
+				}
+				getMobileSmsCode(params).then(res => {
+					if(res.data.code === '0001') {
+						this.countDown();
+					} else {
+						this.$message.error(res.data.message)
+					}
+				}).catch(err => {
+					console.log(err)
+					this.$catchError(err)
+				})
 			},
 			submitForm() {
 				if(this.form.partnerName && this.form.contactName && this.form.titleName && this.form.mobile && this.form.smsCode) {
@@ -97,9 +109,16 @@
 						mobile: this.form.mobile,
 						smsCode: this.form.smsCode,
 					}
-					console.log(data)
-					this.$message('注册成功')
-					this.$router.push('/register_success')
+					requestRegist(data).then(res => {
+						if(res.data.code === '0001') {
+							this.$router.push('/register_success')
+						} else {
+							this.$message.error(res.data.message)
+						}
+					}).catch(err => {
+						console.log(err)
+						this.$catchError(err)
+					})
 				}
 			}
 		}

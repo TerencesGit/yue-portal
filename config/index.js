@@ -32,11 +32,11 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/baseInter': {
+      '/baseUrl': {
         target: 'http://192.168.1.110:8080/portal',
         changeOrigin: true,
         pathRewrite: {
-          '^/baseInter': ''
+          '^/baseUrl': ''
         }
       },
     },
