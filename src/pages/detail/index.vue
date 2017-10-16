@@ -32,7 +32,6 @@
 	      getMyInfo().then(res => {
 	        if(res.data.code === '0001') {
 	          // let userInfo = res.data.result.userInfo;
-	          // console.log(userInfo)
 	        } else {
 	          // this.$message.error(res.data.message)
 	        }

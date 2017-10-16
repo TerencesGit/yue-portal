@@ -5,51 +5,61 @@
 		</header>
 		<main class="main">
 			<div class="flex">
-				<div class="flex-item">
+				<div class="flex-item intro">
 					<img src="../../assets/img/join/intro1.png">
-					<router-link to="photography" class="link-button">
-						<img src="../../assets/img/join/button.png" class="btn-sm">
-					</router-link>
+					<div class="link">
+						<router-link to="photography" class="link-button">
+							<img src="../../assets/img/join/button.png" class="btn-sm">
+						</router-link>
+					</div>
 				</div>
-				<div class="flex-item">
+				<div class="flex-item intro">
 					<img src="../../assets/img/join/intro2.png">
 				</div>
-				<div class="flex-item">
+				<div class="flex-item intro">
 					<img src="../../assets/img/join/intro3.png">
-					<router-link to="tourism" class="link-button">
-						<img src="../../assets/img/join/button.png" class="btn-sm">
-					</router-link>
+					<div class="link">
+						<router-link to="tourism" class="link-button">
+							<img src="../../assets/img/join/button.png" class="btn-sm">
+						</router-link>
+					</div>
 				</div>
 			</div>
 			<div class="flex">
-				<div class="flex-item">
+				<div class="flex-item intro">
 					<img src="../../assets/img/join/intro4.png">
 				</div>
-				<div class="flex-item">
+				<div class="flex-item intro">
 					<img src="../../assets/img/join/intro5.png">
-					<router-link to="finance" class="link-button">
-						<img src="../../assets/img/join/button.png" class="btn-sm">
-					</router-link>
+					<div class="link">
+						<router-link to="finance" class="link-button">
+							<img src="../../assets/img/join/button.png" class="btn-sm">
+						</router-link>
+					</div>
 				</div>
-				<div class="flex-item">
+				<div class="flex-item intro">
 					<img src="../../assets/img/join/intro6.png">
 				</div>
 			</div>
 			<div class="flex">
-				<div class="flex-item">
+				<div class="flex-item intro">
 					<img src="../../assets/img/join/intro7.png">
-					<router-link to="system" class="link-button">
-						<img src="../../assets/img/join/button.png" class="btn-sm">
-					</router-link>
+					<div class="link">
+						<router-link to="system" class="link-button">
+							<img src="../../assets/img/join/button.png" class="btn-sm">
+						</router-link>
+					</div>
 				</div>
-				<div class="flex-item">
+				<div class="flex-item intro">
 					<img src="../../assets/img/join/intro8.png">
 				</div>
-				<div class="flex-item">
+				<div class="flex-item intro">
 					<img src="../../assets/img/join/intro9.png">
-					<router-link to="marketing" class="link-button">
-						<img src="../../assets/img/join/button.png" class="btn-sm">
-					</router-link>
+					<div class="link">
+						<router-link to="marketing" class="link-button">
+							<img src="../../assets/img/join/button.png" class="btn-sm">
+						</router-link>
+					</div>
 				</div>
 			</div>
 		</main>
@@ -111,16 +121,35 @@
 			width: 100%;
 			height: 100%;
 		}
-		.link-button {
+	}
+	.intro {
+		&:hover {
+			.link {
+				display: flex;
+			}
+		}
+		.link {
+			display: none;
 			position: absolute;
-			left: 40px;
-			bottom: 40px;
-			&:hover {
-				.btn-sm {
-					animation: flicker .4s ease-in-out infinite alternate;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,.3);
+			justify-content: center;
+			align-items: center;
+			.link-button {
+				transition: scale .3s;
+				&:hover {
+					transform: scale(1.1);
+					transition: scale .3s;
+					.btn-sm {
+						animation: flicker .4s ease-in-out infinite alternate;
+					}
 				}
 			}
 		}
+		
 	}
 	@keyframes flicker {
 	  0% { 
@@ -151,5 +180,8 @@
 				font-size: 50px;
 			}
 		}
+	}
+	.process {
+		margin-top: 30px;
 	}
 </style>

@@ -12,7 +12,7 @@ import '@/assets/css/main.scss'
 
 Vue.use(Router)
 Vue.use(ElementUI)
-Mock.bootstrap()
+// Mock.bootstrap()
 Vue.prototype.$catchError = (err) => {
   if(!err.data) {
     ElementUI.Message('服务器响应错误')

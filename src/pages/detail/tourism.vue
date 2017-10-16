@@ -40,7 +40,7 @@
 	.header {
 		height: 100vh;
 		background: url(../../assets/img/tourism/banner.png) no-repeat center;
-		background-size: 100% 100%;
+		background-size: cover;
 	}
 	.main {
 		background: #F5F4EF;

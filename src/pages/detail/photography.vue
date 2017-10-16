@@ -30,13 +30,13 @@
 			<div class="native relative">
 				<img src="../../assets/img/photo/native.jpg">
 				<router-link to="native" class="more-link">
-					<img src="../../assets/img/photo/more.png">
+					<!-- <img src="../../assets/img/photo/more.png"> -->
 				</router-link>
 			</div>
 			<div class="oversea relative">
 				<img src="../../assets/img/photo/oversea.jpg">
 				<router-link to="oversea" class="more-link oversea">
-					<img src="../../assets/img/photo/more.png">
+					<!-- <img src="../../assets/img/photo/more.png"> -->
 				</router-link>
 			</div>
 			<div class="footer">
@@ -77,13 +77,15 @@
   }
   .more-link {
   	position: absolute;
-  	right: 28%;
-  	bottom: 50px;
-  	&.oversea {
-  		top: 30%;
-  		left: 25%;
-  		height: 0;
-  	}
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	// &.oversea {
+  	// 	top: 30%;
+  	// 	left: 25%;
+  	// 	height: 0;
+  	// }
   }
   .row {
   	display: flex;
