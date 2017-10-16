@@ -60,6 +60,21 @@ export default {
 				}, 500)
 			})
 		})
+		// 查询邮箱或手机号是否已被使用
+		mock.onGet('/baseInter/accountFind.do').reply(config => {
+			let { account } = config.params;
+			// console.log(account)
+			let _user = _UserList.filter(user => user.email === account);
+			let finded = _user.length > 0 ? true : false;
+			retObj.result = {
+				finded
+			}
+			return new Promise((resolve, reject) => {
+				setTimeout(() => {
+					resolve([200, retObj])
+				}, 500)
+			})
+		})
 		// 获取短信验证码
 		mock.onGet('/baseInter/getMobileSmsCode.do').reply(config => {
 			let { mobile } = config.params;
@@ -73,6 +88,7 @@ export default {
 		// 获取用户信息
 		mock.onGet('/baseInter/getMyInfo.do').reply(config => {
 			let userId = Utils.getCookie('userId');
+			console.log(userId)
 			if(!userId) {
 				return new Promise((resolve, reject) => {
 					setTimeout(() => {

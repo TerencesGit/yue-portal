@@ -43,7 +43,7 @@
 	  align-items: center;
 	  height: 100vh;
 	  background: url(../assets/img/index_bg.jpg) no-repeat center;
-	  background-size: cover;
+	  background-size: 100% 100%;
 	  .icon-arrow-down {
 	    position: absolute;
 	    bottom: 10%;

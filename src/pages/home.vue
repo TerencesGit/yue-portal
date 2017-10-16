@@ -64,7 +64,7 @@
 				<div class="flex-item">
 					<img src="../assets/img/home/home_video_bg.png" alt="">
 					<div class="item-title film">
-						<img src="../assets/img/home/start_button.png" class="pointer" @click="handlePlay">
+						<img src="../assets/img/home/start_button.png" class="pointer" @click="handlePlayed">
 					</div>
 				</div>
 				<div class="flex-item">
@@ -84,7 +84,7 @@
 		<div class="footer-logo">
 			<img src="../assets/img/footer/yue_icon.png">
 		</div>
-		<el-dialog :visible.sync="isPlay" :close-on-click-modal="false" custom-class="video-dialog" @close="handleClose">
+		<el-dialog :visible.sync="videoVisible" :close-on-click-modal="false" custom-class="video-dialog" @close="handleClose">
 			<video id="yueVideo" src="../assets/video/movie.webm" controls autoplay></video>
 		</el-dialog>
 	</section>
@@ -100,7 +100,7 @@
 		},
 		data () {
 			return {
-				isPlay: false,
+				videoVisible: false,
 			}
 		},
 		methods: {
@@ -115,17 +115,18 @@
 	        this.$catchError(err)
 	      })
 	    },
-	    handlePlay() {
-	    	this.isPlay = true;
-	    	document.getElementById('yueVideo').play();
+	    handlePlayed() {
+	    	this.videoVisible = true;
+	    	let yueVideo = document.getElementById('yueVideo');
+	    	yueVideo && yueVideo.play()
 	    },
 	    handleClose() {
 	    	document.getElementById('yueVideo').pause();
-	    }
+	    },
 		},
 		mounted() {
 			window.scrollTo(0, 0)
-			this.getUserInfo()
+			// this.getUserInfo()
 		}
 	}
 </script>

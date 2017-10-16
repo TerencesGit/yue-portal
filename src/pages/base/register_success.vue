@@ -9,7 +9,7 @@
 					<h3><img src="../../assets/img/success.jpg" alt="">恭喜您，注册成功！</h3>
 					<p>请稍后，工作人员马上与您联系</p>
 					<p>我们将确认身份后给予登录账号</p>
-					<p>{{count}}秒后自动跳转登录页.......</p>
+					<!-- <p>{{count}}秒后自动跳转登录页.......</p> -->
 				</div>
 			</div>
 		</div>
@@ -36,7 +36,7 @@
 			},
 		},
 		mounted () {
-			this.countDown()
+			// this.countDown()
 		}
 	}
 </script>

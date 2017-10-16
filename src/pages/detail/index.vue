@@ -45,7 +45,7 @@
 		mounted () {
 			this.asideShow = false;
 			document.addEventListener('scroll', this.scroll)
-			this.getUserInfo()
+			// this.getUserInfo()
 		}
 	}
 </script>

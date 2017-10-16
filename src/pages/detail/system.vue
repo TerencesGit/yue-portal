@@ -13,9 +13,6 @@
 			<div class="platform">
 				<img src="../../assets/img/system/platform.png">
 			</div>
-			<div class="mobile">
-				<img src="../../assets/img/system/mobile.png">
-			</div>
 			<div class="distribution">
 				<img src="../../assets/img/system/distribution.png">
 			</div>

@@ -23,8 +23,8 @@
 							<router-link to="marketing">营销服务</router-link>
 						</li>
 						<li>
-							<!-- <router-link to="join">如何加盟</router-link> -->
-							<span @click="handleJoin">加盟我们</span>
+							<router-link to="/">返回首页</router-link>
+							<!-- <span @click="handleJoin">加盟我们</span> -->
 						</li>
 					</ul>
 				</nav>
@@ -84,8 +84,7 @@
 		},
 		methods: {
 			toggleShow() {
-				// this.navShow = !this.navShow;
-				this.$router.push('/')
+				this.navShow = !this.navShow;
 			},
 			handleJoin() {
 				if (this.submited) {
@@ -102,20 +101,22 @@
 				if(this.form.name && this.form.mobile && this.form.partnerName) {
 					let data = Object.assign({}, this.form)
 					console.log(data)
-					createJoinInfo(data).then(res => {
-						console.log(res)
-						if(res.data.code === '0001') {
-							this.submited = true;
-							this.$message.success('提交成功，请等待管理员联系')
-						} else {
-							this.$message.error(res.data.message)
-						}
-						this.formVisible = false;
-					}).catch(err => {
-						this.formVisible = false;
-						console.log(err)
-						this.$catchError(err)
-					})
+					this.submited = true;
+					this.$message.success('提交成功，请等待管理员联系')
+					// createJoinInfo(data).then(res => {
+					// 	console.log(res)
+					// 	if(res.data.code === '0001') {
+					// 		this.submited = true;
+					// 		this.$message.success('提交成功，请等待管理员联系')
+					// 	} else {
+					// 		this.$message.error(res.data.message)
+					// 	}
+					// 	this.formVisible = false;
+					// }).catch(err => {
+					// 	this.formVisible = false;
+					// 	console.log(err)
+					// 	this.$catchError(err)
+					// })
 				}
 			}
 		}
