@@ -6,7 +6,7 @@
 				<img src="../assets/img/home/home_about_bg.png">
 				<div class="item-title about-us">
 					<img src="../assets/img/home/home_about.png">
-					<router-link to="/detail/join" class="link-button">
+					<router-link to="/detail/about" class="link-button">
 						<img src="../assets/img/home/about_us.png" >
 					</router-link>
 				</div>
@@ -127,6 +127,10 @@
 		mounted() {
 			window.scrollTo(0, 0)
 			// this.getUserInfo()
+			let _53code = document.createElement("script");
+		  _53code.src = "http://tb.53kf.com/code/code/9006078/2";
+		  let s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(_53code, s);
 		}
 	}
 </script>

@@ -81,6 +81,8 @@
 		  }
 		}
 		.footer-logo {
+			width: 30px;
+			height: 30px;
 			padding: 0 15px 15px;
 			text-align: center;
 		}

@@ -12,6 +12,7 @@ import Finance from '@/pages/detail/finance'
 import System from '@/pages/detail/system'
 import Marketing from '@/pages/detail/marketing'
 import Join from '@/pages/detail/join'
+import About from '@/pages/detail/about'
 
 const routes = [
   {
@@ -84,6 +85,11 @@ const routes = [
         path: 'join',
         name: 'join',
         component: Join,
+      },
+      {
+        path: 'about',
+        name: 'about',
+        component: About,
       },
     ]
   }

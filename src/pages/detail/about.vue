@@ -1,17 +1,17 @@
 <template>
 	<section>
-		<!-- <header>
+		<header>
 			<img src="../../assets/img/join/banner.png">
 		</header>
 		<main class="main">
 			<div class="flex">
 				<div class="flex-item intro">
 					<img src="../../assets/img/join/intro1.png">
-					<div class="link">
+					<!-- <div class="link"> -->
 						<router-link to="photography" class="link-button">
-							<img src="../../assets/img/join/button.png" class="btn-sm">
+							<!-- <img src="../../assets/img/join/button.png" class="btn-sm"> -->
 						</router-link>
-					</div>
+					<!-- </div> -->
 				</div>
 				<div class="flex-item intro">
 					<img src="../../assets/img/join/intro2.png">
@@ -20,7 +20,7 @@
 					<img src="../../assets/img/join/intro3.png">
 					<div class="link">
 						<router-link to="tourism" class="link-button">
-							<img src="../../assets/img/join/button.png" class="btn-sm">
+							<!-- <img src="../../assets/img/join/button.png" class="btn-sm"> -->
 						</router-link>
 					</div>
 				</div>
@@ -29,13 +29,11 @@
 				<div class="flex-item intro">
 					<img src="../../assets/img/join/intro4.png">
 				</div>
-				<div class="flex-item intro">
+				<div class="flex-item intro gray">
 					<img src="../../assets/img/join/intro5.png">
-					<div class="link">
-						<router-link to="finance" class="link-button">
-							<img src="../../assets/img/join/button.png" class="btn-sm">
-						</router-link>
-					</div>
+					<router-link to="finance" class="link-button">
+						<!-- <img src="../../assets/img/join/button.png" class="btn-sm"> -->
+					</router-link>
 				</div>
 				<div class="flex-item intro">
 					<img src="../../assets/img/join/intro6.png">
@@ -44,28 +42,24 @@
 			<div class="flex">
 				<div class="flex-item intro">
 					<img src="../../assets/img/join/intro7.png">
-					<div class="link">
-						<router-link to="system" class="link-button">
-							<img src="../../assets/img/join/button.png" class="btn-sm">
-						</router-link>
-					</div>
+					<router-link to="system" class="link-button">
+						<!-- <img src="../../assets/img/join/button.png" class="btn-sm"> -->
+					</router-link>
 				</div>
 				<div class="flex-item intro">
 					<img src="../../assets/img/join/intro8.png">
 				</div>
 				<div class="flex-item intro">
 					<img src="../../assets/img/join/intro9.png">
-					<div class="link">
-						<router-link to="marketing" class="link-button">
-							<img src="../../assets/img/join/button.png" class="btn-sm">
-						</router-link>
-					</div>
+					<router-link to="marketing" class="link-button">
+						<!-- <img src="../../assets/img/join/button.png" class="btn-sm"> -->
+					</router-link>
 				</div>
 			</div>
 		</main>
 		<div class="view">
 			<img src="../../assets/img/join/view.png">
-		</div> -->
+		</div>
 		<!-- <div class="join-us">
 			<div class="join-reason">
 				<img src="../../assets/img/join/join.png">
@@ -122,6 +116,42 @@
 			height: 100%;
 		}
 	}
+	.intro {
+		&.gray {
+			&:hover {
+				.link-button {
+					width: 104px;
+					height: 32px;
+					background: url(../../assets/img/join/button_big_gray.png) no-repeat center;
+				}
+			}
+			.link-button {
+				position: absolute;
+				left: 40px;
+				bottom: 40px;
+				width: 32px;
+				height: 32px;
+				background: url(../../assets/img/join/button_gray.png) no-repeat center;
+				transition: all .2s;
+			}
+		}
+		&:hover {
+			.link-button {
+				width: 104px;
+				height: 32px;
+				background: url(../../assets/img/join/button_big.png) no-repeat center;
+			}
+		}
+		.link-button {
+			position: absolute;
+			left: 40px;
+			bottom: 40px;
+			width: 32px;
+			height: 32px;
+			background: url(../../assets/img/join/button.png) no-repeat center;
+			transition: all .2s;
+		}
+	}
 	.join-us {
 		display: flex;
 		width: 80%;
@@ -141,5 +171,8 @@
 				font-size: 50px;
 			}
 		}
+	}
+	.process {
+		margin-top: 50px;
 	}
 </style>
