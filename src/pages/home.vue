@@ -77,7 +77,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="intro">
+			<div class="flex-item intro">
 				<img src="../assets/img/home/home_intro.png">
 			</div>
 		</div>
@@ -127,10 +127,10 @@
 		mounted() {
 			window.scrollTo(0, 0)
 			// this.getUserInfo()
-			let _53code = document.createElement("script");
-		  _53code.src = "http://tb.53kf.com/code/code/9006078/2";
-		  let s = document.getElementsByTagName("script")[0]; 
-		  s.parentNode.insertBefore(_53code, s);
+			// let _53code = document.createElement("script");
+		 //  _53code.src = "http://tb.53kf.com/code/code/9006078/2";
+		 //  let s = document.getElementsByTagName("script")[0]; 
+		 //  s.parentNode.insertBefore(_53code, s);
 		}
 	}
 </script>

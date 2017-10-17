@@ -62,8 +62,14 @@
 			display: flex;
 			justify-content: center;
 			padding: 20px 50px;
+			width: 80%;
+			margin: auto;
 		  .nav-item {
+		  	flex: 1;
 		    position: relative;
+		    img {
+		    	width: 100%;
+		    }
 		    &:nth-of-type(even) {
 		      .item-show {
 		        .show-button {
@@ -77,6 +83,17 @@
 		      left: 0;
 		      width: 100%;
 		      text-align: center;
+		      @media screen and (max-width: 768px) {
+					  top: 50%;
+					}
+					@media screen and (max-width: 450px) {
+					  top: 30%;
+					}
+		      .show-button {
+		      	display: block;
+		      	width: 40%;
+		      	margin: auto;
+		      }
 		    }
 		  }
 		}

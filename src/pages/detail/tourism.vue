@@ -18,13 +18,13 @@
 				</div>
 			</div>
 			<div class="banner">
-				<img src="../../assets/img/tourism/yue_banner.png" alt="">
+				<img src="../../assets/img/tourism/yue_banner.png" class="responsive-img">
 			</div>
 			<div class="view">
-				<img src="../../assets/img/tourism/view.png" alt="">
+				<img src="../../assets/img/tourism/view.png">
 			</div>
 			<div class="map">
-				<img src="../../assets/img/yue_map.png" alt="">
+				<img src="../../assets/img/yue_map.png" class="responsive-img">
 			</div>
 		</div>
 	</section>

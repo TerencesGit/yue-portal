@@ -132,7 +132,7 @@
 		top: 100px;
 		left: 0;
 		z-index: 999;
-		width: 120px;
+		// width: 120px;
 		.logo {
 			padding: 10px;
 			text-align: center;
@@ -166,6 +166,8 @@
 			a {
 				display: inline-block;
 				width: 100%;
+				padding: 0 15px;
+				font-size: 14px;
 			}
 			span {
 				color: #337ab7;
@@ -192,5 +194,15 @@
 				background: transparent;
 			}
 		}
+	}
+	.slide-fade-enter-active {
+    transition: all .3s ease;
+	}
+	.slide-fade-leave-active {
+	  transition: all .1s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+	}
+	.slide-fade-enter, .slide-fade-leave-to {
+	  transform: translateY(-10px);
+	  opacity: 0;
 	}
 </style>

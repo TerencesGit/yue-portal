@@ -1,12 +1,12 @@
 <template>
 	<section>
 		<header class="header">
-			<img src="../../assets/img/photo/native_head.png" alt="">
+			<img src="../../assets/img/photo/native_head.png" class="responsive-img">
 		</header>
 		<div class="main">
 			<div class="main-center">
 				<div class="main-title">
-					<img src="../../assets/img/photo/native_title.png" alt="">
+					<img src="../../assets/img/photo/native_title.png" class="responsive-img">
 				</div>
 				<div>
 					<img src="../../assets/img/photo/native_show1.png" alt="">
@@ -68,6 +68,9 @@
 		}
 		.main-title {
 			padding: 30px 0;
+			img {
+				width: 80%;
+			}
 		}
 	}
 </style>

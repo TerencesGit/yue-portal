@@ -1,7 +1,7 @@
 <template>
 	<section>
 		<header class="header">
-			<img src="../../assets/img/photo/oversea_head.png" alt="">
+			<img src="../../assets/img/photo/oversea_head.png" class="responsive-img">
 		</header>
 		<div class="main">
 			<div class="main-center">
@@ -42,7 +42,7 @@
 </script>
 <style scoped lang="scss">
 	.header {
-		height: 90vh;
+		height: 95vh;
 	}
 	.main {
 		background: url(../../assets/img/photo/wave_bg.png) repeat center fixed;
@@ -68,6 +68,9 @@
 		}
 		.main-title {
 			padding: 30px 0;
+			img {
+				width: 80%;
+			}
 		}
 	}
 </style>

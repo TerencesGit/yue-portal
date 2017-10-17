@@ -1,74 +1,74 @@
 <template>
 	<section>
 		<!-- <header>
-			<img src="../../assets/img/join/banner.png">
+			<img src="../../assets/img/about/banner.png">
 		</header>
 		<main class="main">
 			<div class="flex">
 				<div class="flex-item intro">
-					<img src="../../assets/img/join/intro1.png">
+					<img src="../../assets/img/about/intro1.png">
 					<div class="link">
 						<router-link to="photography" class="link-button">
-							<img src="../../assets/img/join/button.png" class="btn-sm">
+							<img src="../../assets/img/about/button.png" class="btn-sm">
 						</router-link>
 					</div>
 				</div>
 				<div class="flex-item intro">
-					<img src="../../assets/img/join/intro2.png">
+					<img src="../../assets/img/about/intro2.png">
 				</div>
 				<div class="flex-item intro">
-					<img src="../../assets/img/join/intro3.png">
+					<img src="../../assets/img/about/intro3.png">
 					<div class="link">
 						<router-link to="tourism" class="link-button">
-							<img src="../../assets/img/join/button.png" class="btn-sm">
+							<img src="../../assets/img/about/button.png" class="btn-sm">
 						</router-link>
 					</div>
 				</div>
 			</div>
 			<div class="flex">
 				<div class="flex-item intro">
-					<img src="../../assets/img/join/intro4.png">
+					<img src="../../assets/img/about/intro4.png">
 				</div>
 				<div class="flex-item intro">
-					<img src="../../assets/img/join/intro5.png">
+					<img src="../../assets/img/about/intro5.png">
 					<div class="link">
 						<router-link to="finance" class="link-button">
-							<img src="../../assets/img/join/button.png" class="btn-sm">
+							<img src="../../assets/img/about/button.png" class="btn-sm">
 						</router-link>
 					</div>
 				</div>
 				<div class="flex-item intro">
-					<img src="../../assets/img/join/intro6.png">
+					<img src="../../assets/img/about/intro6.png">
 				</div>
 			</div>
 			<div class="flex">
 				<div class="flex-item intro">
-					<img src="../../assets/img/join/intro7.png">
+					<img src="../../assets/img/about/intro7.png">
 					<div class="link">
 						<router-link to="system" class="link-button">
-							<img src="../../assets/img/join/button.png" class="btn-sm">
+							<img src="../../assets/img/about/button.png" class="btn-sm">
 						</router-link>
 					</div>
 				</div>
 				<div class="flex-item intro">
-					<img src="../../assets/img/join/intro8.png">
+					<img src="../../assets/img/about/intro8.png">
 				</div>
 				<div class="flex-item intro">
-					<img src="../../assets/img/join/intro9.png">
+					<img src="../../assets/img/about/intro9.png">
 					<div class="link">
 						<router-link to="marketing" class="link-button">
-							<img src="../../assets/img/join/button.png" class="btn-sm">
+							<img src="../../assets/img/about/button.png" class="btn-sm">
 						</router-link>
 					</div>
 				</div>
 			</div>
 		</main>
 		<div class="view">
-			<img src="../../assets/img/join/view.png">
+			<img src="../../assets/img/about/view.png">
 		</div> -->
 		<!-- <div class="join-us">
 			<div class="join-reason">
-				<img src="../../assets/img/join/join.png">
+				<img src="../../assets/img/about/join.png">
 			</div>
 			<div class="join-form">
 				<h2>加盟我们</h2>
@@ -96,7 +96,7 @@
 			</div>
 		</div> -->
 		<div class="process">
-			<img src="../../assets/img/join/process.png">
+			<img src="../../assets/img/about/process.png">
 		</div>
 	</section>
 </template>

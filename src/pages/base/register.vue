@@ -164,7 +164,7 @@
 			width: 400px;
 			text-align: center;
 			@media screen and (max-width: 600px) {
-			   width: 300px;
+			  width: 300px;
 			}
 			.login-content {
 				margin: 30px 0;

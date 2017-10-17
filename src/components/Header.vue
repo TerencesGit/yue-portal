@@ -1,6 +1,6 @@
 <template>
 	<div class="full-header">
-		<div class="title">
+		<div class="header-title">
 			<slot name="header-title">
 				<img src="../assets/img/index_logo.png">
 			</slot>
@@ -42,8 +42,17 @@
 	  justify-content: center;
 	  align-items: center;
 	  height: 100vh;
-	  background: url(../assets/img/index_bg.jpg) no-repeat center;
-	  background-size: 100% 100%;
+	  background: url(../assets/img/header_bg.jpg) no-repeat center;
+	  background-size: cover;
+	  @media screen and (max-width: 768px) {
+		  background: url(../assets/img/header_bg_mob.jpg) no-repeat center;
+	  	background-size: cover;
+		}
+	  .header-title {
+	  	width: 80%;
+	  	margin: auto;
+	  	text-align: center;
+	  }
 	  .icon-arrow-down {
 	    position: absolute;
 	    bottom: 10%;

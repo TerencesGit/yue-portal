@@ -6,18 +6,18 @@
 		</HeaderComp>
 		<div class="main">
 			<div class="map">
-				<img src="../../assets/img/yue_map.png">
+				<img src="../../assets/img/yue_map.png" class="responsive-img">
 			</div>
 			<div class="advantage">
-				<img src="../../assets/img/photo/advantage.jpg">
+				<img src="../../assets/img/photo/advantage.jpg" class="responsive-img">
 			</div>
 			<div class="row">
 				<div class="col">
-					<img src="../../assets/img/photo/global_travel.jpg">
+					<img src="../../assets/img/photo/global_travel.jpg" class="responsive-img">
 				</div>
 				<div class="col micro-film">
 					<div>
-						<img src="../../assets/img/photo/film_title.png">
+						<img src="../../assets/img/photo/film_title.png" class="responsive-img">
 					</div>
 					<div class="video">
 						<video src="../../assets/video/movie.webm" controls></video>
@@ -28,19 +28,19 @@
 				</div>
 			</div>
 			<div class="native relative">
-				<img src="../../assets/img/photo/native.jpg">
+				<img src="../../assets/img/photo/native.jpg" class="responsive-img">
 				<router-link to="native" class="more-link">
 					<!-- <img src="../../assets/img/photo/more.png"> -->
 				</router-link>
 			</div>
 			<div class="oversea relative">
-				<img src="../../assets/img/photo/oversea.jpg">
+				<img src="../../assets/img/photo/oversea.jpg" class="responsive-img">
 				<router-link to="oversea" class="more-link oversea">
 					<!-- <img src="../../assets/img/photo/more.png"> -->
 				</router-link>
 			</div>
 			<div class="footer">
-				<img src="../../assets/img/photo/photo_footer.jpg">
+				<img src="../../assets/img/photo/photo_footer.jpg" class="responsive-img">
 			</div>
 		</div>
 	</section>
