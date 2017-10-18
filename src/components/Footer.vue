@@ -69,6 +69,7 @@
 		    position: relative;
 		    img {
 		    	width: 100%;
+		    	height: 100%;
 		    }
 		    &:nth-of-type(even) {
 		      .item-show {

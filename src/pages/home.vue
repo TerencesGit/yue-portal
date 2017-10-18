@@ -3,7 +3,7 @@
 		<HeaderComp></HeaderComp>
 		<div class="main">
 			<div class="flex-item">
-				<img src="../assets/img/home/home_about_bg.png">
+				<img src="../assets/img/home/home_about_bg.png" class="responsive-img">
 				<div class="item-title about-us">
 					<img src="../assets/img/home/home_about.png">
 					<router-link to="/detail/about" class="link-button">
@@ -85,7 +85,7 @@
 			<img src="../assets/img/footer/yue_icon.png">
 		</div>
 		<el-dialog :visible.sync="videoVisible" :close-on-click-modal="false" custom-class="video-dialog" @close="handleClose">
-			<video id="yueVideo" src="../assets/video/movie.webm" controls autoplay></video>
+			<video id="yueVideo" src="http://1254456297.vod2.myqcloud.com/2f3b5ff4vodtransgzp1254456297/fb24bb029031868223371331575/v.f30.mp4" controls autoplay></video>
 		</el-dialog>
 	</section>
 </template>
@@ -127,19 +127,20 @@
 		mounted() {
 			window.scrollTo(0, 0)
 			// this.getUserInfo()
-			// let _53code = document.createElement("script");
-		 //  _53code.src = "http://tb.53kf.com/code/code/9006078/2";
-		 //  let s = document.getElementsByTagName("script")[0]; 
-		 //  s.parentNode.insertBefore(_53code, s);
+			if(document.getElementById('iconDiv1')) return;
+			let _53code = document.createElement("script");
+		  _53code.src = "http://tb.53kf.com/code/code/9006078/2";
+		  let s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(_53code, s);
 		}
 	}
 </script>
 <style scoped lang="scss">
 	.flex-item {
-		position: relative;
 		> img {
+			display: block;
 			width: 100%;
-			height: 100%
+			height: 100%;
 		}
 	}
 	.item-title {

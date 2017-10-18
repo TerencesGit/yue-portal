@@ -24,6 +24,7 @@ Vue.prototype.$catchError = (err) => {
     ElementUI.Message('服务器响应超时')
   }
 }
+Vue.prototype.$kefu = null
 Vue.config.productionTip = false
 const router = new Router({
 	routes

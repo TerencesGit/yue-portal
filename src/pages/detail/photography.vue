@@ -20,7 +20,7 @@
 						<img src="../../assets/img/photo/film_title.png" class="responsive-img">
 					</div>
 					<div class="video">
-						<video src="../../assets/video/movie.webm" controls></video>
+						<video src="http://1254456297.vod2.myqcloud.com/2f3b5ff4vodtransgzp1254456297/fb24bb029031868223371331575/v.f30.mp4" controls></video>
 					</div>
 					<div>
 						<img src="../../assets/img/photo/film_footer.png">

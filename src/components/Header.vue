@@ -2,7 +2,7 @@
 	<div class="full-header">
 		<div class="header-title">
 			<slot name="header-title">
-				<img src="../assets/img/index_logo.png">
+				<img src="../assets/img/header_logo.png">
 			</slot>
 		</div>
 		<div class="icon-arrow-down" @click="scrollDown">

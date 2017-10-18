@@ -45,6 +45,11 @@
 			this.asideShow = false;
 			document.addEventListener('scroll', this.scroll)
 			// this.getUserInfo()
+			if(document.getElementById('iconDiv1')) return;
+			let _53code = document.createElement("script");
+		  _53code.src = "http://tb.53kf.com/code/code/9006078/2";
+		  let s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(_53code, s);
 		}
 	}
 </script>
