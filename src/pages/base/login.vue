@@ -69,8 +69,8 @@
                 name: escape(btoa(this.form.username)),
                 pwd: escape(btoa(this.form.password)),
               }
-              if(res.data.result.redirect) {
-              	window.location.href = res.data.result.redirect;
+              if(res.data.result.redirectUrl) {
+              	window.location.href = res.data.result.redirectUrl;
               } else {
               	let userId = res.data.result.userInfo.userId;
 	              localStorage.setItem('user', JSON.stringify(user))

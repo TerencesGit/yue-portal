@@ -43,7 +43,7 @@
 		},
 		mounted () {
 			this.asideShow = false;
-			// this.getUserInfo()
+			this.getUserInfo()
 			document.addEventListener('scroll', this.scroll)
 			if(document.getElementById('iconDiv1')) return;
 			let _53code = document.createElement("script");

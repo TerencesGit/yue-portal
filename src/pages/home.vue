@@ -126,7 +126,7 @@
 		},
 		mounted() {
 			window.scrollTo(0, 0)
-			// this.getUserInfo()
+			this.getUserInfo()
 			if(document.getElementById('iconDiv1')) return;
 			let _53code = document.createElement("script");
 		  _53code.src = "http://tb.53kf.com/code/code/9006078/2";
