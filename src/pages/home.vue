@@ -82,7 +82,7 @@
 			</div>
 		</div>
 		<div class="footer-logo">
-			<img src="../assets/img/footer/yue_icon.png">
+			<span></span>
 		</div>
 		<el-dialog :visible.sync="videoVisible" :close-on-click-modal="false" custom-class="video-dialog" @close="handleClose">
 			<video id="yueVideo" src="http://1254456297.vod2.myqcloud.com/2f3b5ff4vodtransgzp1254456297/fb24bb029031868223371331575/v.f30.mp4" controls autoplay></video>
@@ -126,7 +126,7 @@
 		},
 		mounted() {
 			window.scrollTo(0, 0)
-			// this.getUserInfo()
+			this.getUserInfo()
 			if(document.getElementById('iconDiv1')) return;
 			let _53code = document.createElement("script");
 		  _53code.src = "http://tb.53kf.com/code/code/9006078/2";
@@ -181,8 +181,15 @@
 		}
 	}
 	.footer-logo {
-	  padding: 15px 15px 30px;
+	  padding: 15px;
 	  text-align: center;
 	  background: #fff;
+	  span {
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			background: url(../assets/img/footer/yue_icon.png) no-repeat center;
+			background-size: cover;
+		}
 	}
 </style>

@@ -17,8 +17,8 @@ export default {
 		let mock = new MockAdapter(axios);
 		// 登录
 		mock.onPost('/baseInter/login.do').reply(config => {
-			let { username, password } = JSON.parse(config.data);
-			let loginUser = _UserList.filter(user => user.email === username)[0];
+			let { email, password } = JSON.parse(config.data);
+			let loginUser = _UserList.filter(user => user.email === email)[0];
 			if(loginUser) {
 				if(loginUser.password === password) {
 					return new Promise((resolve, reject) => {
@@ -81,12 +81,12 @@ export default {
 			retObj.result = {}
 			return new Promise((resolve, reject) => {
 				setTimeout(() => {
-						resolve([200, retObj])
+				resolve([200, retObj])
 				}, 500)
 			})
 		})
 		// 获取用户信息
-		mock.onGet('/baseInter/getMyInfo.do').reply(config => {
+		mock.onGet('/accountInter/getMyInfo.do').reply(config => {
 			let userId = Utils.getCookie('userId');
 			console.log(userId)
 			if(!userId) {

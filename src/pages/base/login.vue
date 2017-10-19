@@ -58,29 +58,32 @@
 			submitForm() {
 				if(this.form.username && this.form.password) {
 					let data = {
-						username: this.form.username,
+						email: this.form.username,
 						password: Md5.hex_md5(this.form.password)
 					}
-					this.$router.push('/')
-					// this.loading = true;
-					// requestLogin(data).then(res => {
-					// 	this.loading = false;
-					// 	if(res.data.code === '0001') {
-					// 		let user = {
-     //            name: escape(btoa(data.username)),
-     //            pwd: escape(btoa(this.form.password)),
-     //          }
-     //          let userId = res.data.result.userInfo.userId
-     //          localStorage.setItem('user', JSON.stringify(user))
-     //          Utils.setCookie('userId', userId)
-					// 		this.$router.push('/')
-					// 		// this.$message.success('登录成功')
-					// 	} else {
-					// 		this.$message.error(res.data.message)
-					// 	}
-					// }).catch(err => {
-					// 	console.log(err)
-					// })
+					this.loading = true;
+					requestLogin(data).then(res => {
+						this.loading = false;
+						if(res.data.code === '0001') {
+							let user = {
+                name: escape(btoa(this.form.username)),
+                pwd: escape(btoa(this.form.password)),
+              }
+              if(res.data.result.redirect) {
+              	window.location.href = res.data.result.redirect;
+              } else {
+              	let userId = res.data.result.userInfo.userId;
+	              localStorage.setItem('user', JSON.stringify(user))
+	              Utils.setCookie('userId', userId)
+								this.$router.push('/')
+								// this.$message.success('登录成功')
+              }
+						} else {
+							this.$message.error(res.data.message)
+						}
+					}).catch(err => {
+						console.log(err)
+					})
 				}
 			}
 		},

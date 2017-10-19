@@ -184,7 +184,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="flex">
+				<div class="flex flex-second">
 					<div class="flex-item">
 						<img src="../../assets/img/marketing/plan5.png" alt="">
 						<div class="text-center">
@@ -241,7 +241,7 @@
 		text-align: center;
 		h3 {
 			display: block;
-			margin: .6rem 0;
+			margin: 0.5rem 0;
 			font-size: 1.6rem;
 			font-weight: 600;
 		}
@@ -272,7 +272,7 @@
 			width: 5rem;
 			height: 2px;
 			position: relative;
-			top: -0.6rem;
+			top: -0.3rem;
 			background: #01AEFC;
 		}
 	}
@@ -313,7 +313,7 @@
 	.flow-channel {
 		width: 60%;
 		margin: 5.5rem auto;
-		@media (min-width: 1440px) {
+		@media (min-width: 1600px) {
 			width: 45%;
 		}
 		.about-title {
@@ -401,8 +401,13 @@
 					width: 4.1rem;
 					height: 2px;
 					position: relative;
-					top: -0.2rem;
+					top: 0;
 					background: #01AEFA;
+				}
+			}
+			&.flex-second {
+				.underline {
+					top: -2px;
 				}
 			}
 		}

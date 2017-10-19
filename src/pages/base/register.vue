@@ -40,7 +40,7 @@
 						</div>
 						<div class="form-item">
 							<label class="form-item__label" for="mobile">手机号</label>
-							<input type="mobile" id="mobile" v-model="form.mobile" class="form-item__input" @blur="handleMobileBlur" maxlength="11" required>
+							<input type="mobile" id="mobile" v-model="form.mobile" class="form-item__input"  maxlength="11" required>
 						</div>
 						<div class="form-item">
 							<label class="form-item__label" for="smsCode">手机验证码</label>
@@ -63,7 +63,6 @@
 			return {
 				form: {
 					partnerName: '',
-					// partnerSite: '',
 					contactName: '',
 					titleName: '',
 					mobile: '',
@@ -72,7 +71,7 @@
 					password: '',
 					password2: ''
 				},
-				disabled: true,
+				disabled: false,
 				buttonText: '获取验证码',
 			}
 		},
@@ -93,11 +92,19 @@
 				}, 1000)	
 			},
 			getSmsCode(e) {
+				if(!this.form.mobile.match(/^(13|14|15|17|18)\d{9}$/)){
+					this.$notify.warning({
+						title: '提示',
+						message: '请填写正确手机号码',
+					})
+					return;
+				}
 				let params ={
 					mobile: this.form.mobile
 				}
 				// this.countDown();
 				getMobileSmsCode(params).then(res => {
+					console.log(res)
 					if(res.data.code === '0001') {
 						this.countDown();
 					} else {
@@ -107,17 +114,6 @@
 					console.log(err)
 					this.$catchError(err)
 				})
-			},
-			handleMobileBlur() {
-				if(this.form.mobile.match(/^(13|14|15|17|18)\d{9}$/)){
-					this.disabled = false;
-				} else {
-					this.disabled = true;
-					this.$notify.warning({
-						title: '提示',
-						message: '请填写正确手机号码',
-					})
-				}
 			},
 			submitForm() {
 				let data = Object.assign({}, this.form)
@@ -131,10 +127,10 @@
 					})
 					return;
 				}
-				if(this.disabled) {
+				if(!this.form.mobile.match(/^(13|14|15|17|18)\d{9}$/)) {
 					this.$notify.warning({
 						title: '提示',
-						message: '请填写正确手机号码',
+						message: '请输入正确手机号码',
 					})
 					return;
 				}

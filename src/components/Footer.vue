@@ -51,7 +51,7 @@
 			</li>
 		</ul>
 		<div class="footer-logo">
-			<img src="../assets/img/footer/yue_icon.png">
+			<span></span>
 		</div>
 	</footer>
 </template>
@@ -92,17 +92,22 @@
 					}
 		      .show-button {
 		      	display: block;
-		      	width: 40%;
+		      	width: 50%;
 		      	margin: auto;
 		      }
 		    }
 		  }
 		}
 		.footer-logo {
-			width: 30px;
-			height: 30px;
 			padding: 0 15px 15px;
 			text-align: center;
+			span {
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				background: url(../assets/img/footer/yue_icon.png) no-repeat center;
+				background-size: cover;
+			}
 		}
 	}
 </style>

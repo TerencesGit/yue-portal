@@ -56,6 +56,9 @@
 	  .icon-arrow-down {
 	    position: absolute;
 	    bottom: 10%;
+	    width: 45px;
+	    margin: auto;
+	    text-align: center;
 	    cursor: pointer;
 	    animation: flicker .4s ease-in-out infinite alternate;
 	  }
