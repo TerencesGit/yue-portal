@@ -20,7 +20,7 @@
 				<img src="../../assets/img/finance/chain.png" class="responsive-img">
 			</div>
 			<div class="payment">
-				<img src="../../assets/img/finance/payment.png" class="responsive-img">
+				<img src="../../assets/img/finance/payment.jpg" class="responsive-img">
 			</div>
 			<div class="settlement">
 				<img src="../../assets/img/finance/settlement.png" class="responsive-img">

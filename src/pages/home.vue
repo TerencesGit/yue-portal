@@ -62,7 +62,7 @@
 			</div>
 			<div class="flex">
 				<div class="flex-item">
-					<img src="../assets/img/home/home_video_bg.png" alt="">
+					<img src="../assets/img/home/home_video_bg.jpg" alt="">
 					<div class="item-title film">
 						<img src="../assets/img/home/start_button.png" class="pointer" @click="handlePlayed">
 					</div>
@@ -78,7 +78,7 @@
 				</div>
 			</div>
 			<div class="flex-item intro">
-				<img src="../assets/img/home/home_intro.png">
+				<img src="../assets/img/home/home_intro.jpg">
 			</div>
 		</div>
 		<div class="footer-logo">
@@ -126,7 +126,7 @@
 		},
 		mounted() {
 			window.scrollTo(0, 0)
-			this.getUserInfo()
+			// this.getUserInfo()
 			if(document.getElementById('iconDiv1')) return;
 			let _53code = document.createElement("script");
 		  _53code.src = "http://tb.53kf.com/code/code/9006078/2";

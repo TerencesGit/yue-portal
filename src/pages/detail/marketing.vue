@@ -1,7 +1,7 @@
 <template>
 	<section>
 		<header>
-			<img src="../../assets/img/marketing/banner.png" class="responsive-img">
+			<img src="../../assets/img/marketing/banner.jpg" class="responsive-img">
 		</header>
 		<main>
 			<div class="produce-service">
@@ -95,7 +95,7 @@
 				<img src="../../assets/img/marketing/channel.png" class="responsive-img">
 			</div> -->
 			<div class="channel-banner">
-				<img src="../../assets/img/marketing/channel_banner.png" class="responsive-img">
+				<img src="../../assets/img/marketing/channel_banner.jpg" class="responsive-img">
 			</div>
 			<div class="marketing-problem">
 				<div class="about-title">

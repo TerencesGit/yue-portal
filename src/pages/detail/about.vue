@@ -1,7 +1,7 @@
 <template>
 	<section>
 		<header>
-			<img src="../../assets/img/about/banner.png" class="responsive-img">
+			<img src="../../assets/img/about/banner.jpg" class="responsive-img">
 		</header>
 		<main class="main">
 			<div class="flex">
@@ -84,7 +84,7 @@
 			</div>
 		</main>
 		<div class="view">
-			<img src="../../assets/img/about/view.png" class="responsive-img">
+			<img src="../../assets/img/about/view.jpg" class="responsive-img">
 		</div>
 		<div class="about-wrap">
 			<img src="../../assets/img/about/about_bg.jpg" class="responsive-img">
@@ -123,7 +123,7 @@
 			<img src="../../assets/img/about/about_banner.jpg" class="responsive-img">
 		</div> -->
 		<div class="process">
-			<img src="../../assets/img/about/process.png" class="responsive-img">
+			<img src="../../assets/img/about/process.jpg" class="responsive-img">
 		</div>
 	</section>
 </template>
@@ -253,7 +253,7 @@
 				bottom: 0;
 				width: 45%;
 				padding: 2rem;
-				background: url(../../assets/img/about/about_view.png);
+				background: url(../../assets/img/about/about_view.jpg);
 				background-size: cover;
 				.logo {
 					width: 40%;

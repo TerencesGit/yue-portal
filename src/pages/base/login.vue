@@ -76,7 +76,6 @@
 	              localStorage.setItem('user', JSON.stringify(user))
 	              Utils.setCookie('userId', userId)
 								this.$router.push('/')
-								// this.$message.success('登录成功')
               }
 						} else {
 							this.$message.error(res.data.message)
@@ -102,7 +101,7 @@
 		justify-content: center;
 		align-items: center;
 		height: 100vh;
-		background: url(../../assets/img/login_bg.png);
+		background: url(../../assets/img/login_bg.jpg);
 		background-size: 100% 100%;
 		.login-box {
 			width: 350px;

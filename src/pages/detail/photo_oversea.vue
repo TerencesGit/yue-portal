@@ -1,7 +1,7 @@
 <template>
 	<section>
 		<header class="header">
-			<img src="../../assets/img/photo/oversea_head.png" class="responsive-img">
+			<img src="../../assets/img/photo/oversea_head.jpg" class="responsive-img">
 		</header>
 		<div class="main">
 			<div class="main-center">
@@ -9,25 +9,28 @@
 					<img src="../../assets/img/photo/oversea_title.png" alt="">
 				</div>
 				<div>
-					<img src="../../assets/img/photo/oversea_show1.png" alt="">
+					<img src="../../assets/img/photo/oversea_show1.jpg" alt="">
 				</div>
 				<div>
-					<img src="../../assets/img/photo/oversea_show2.png" alt="">
+					<img src="../../assets/img/photo/oversea_show2.jpg" alt="">
 				</div>
 				<div>
-					<img src="../../assets/img/photo/oversea_show3.png" alt="">
+					<img src="../../assets/img/photo/oversea_show3.jpg" alt="">
 				</div>
 				<div>
-					<img src="../../assets/img/photo/oversea_show4.png" alt="">
+					<img src="../../assets/img/photo/oversea_show4.jpg" alt="">
 				</div>
 				<div>
-					<img src="../../assets/img/photo/oversea_show5.png" alt="">
+					<img src="../../assets/img/photo/oversea_show5.jpg" alt="">
 				</div>
 				<div>
-					<img src="../../assets/img/photo/oversea_show6.png" alt="">
+					<img src="../../assets/img/photo/oversea_show6.jpg" alt="">
 				</div>
 				<div>
-					<img src="../../assets/img/photo/oversea_show7.png" alt="">
+					<img src="../../assets/img/photo/oversea_show7.jpg" alt="">
+				</div>
+				<div>
+					<img src="../../assets/img/photo/oversea_show8.jpg" alt="">
 				</div>
 			</div>
 		</div>
@@ -45,7 +48,7 @@
 		height: 95vh;
 	}
 	.main {
-		background: url(../../assets/img/photo/wave_bg.png) repeat center fixed;
+		background: url(../../assets/img/photo/wave_bg.jpg) repeat center fixed;
 		.main-center {
 			width: 80%;
 			margin: 0 auto;

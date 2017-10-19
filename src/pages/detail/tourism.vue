@@ -7,24 +7,24 @@
 					<img src="../../assets/img/tourism/tourism_title.png" alt="">
 				</div>
 				<div class="text-center">
-					<img src="../../assets/img/tourism/tourism_pic1.png" alt="">
-					<img src="../../assets/img/tourism/tourism_pic2.png" alt="">
-					<img src="../../assets/img/tourism/tourism_pic3.png" alt="">
-					<img src="../../assets/img/tourism/tourism_pic4.png" alt="">
-					<img src="../../assets/img/tourism/tourism_pic5.png" alt="">
-					<img src="../../assets/img/tourism/tourism_pic6.png" alt="">
-					<img src="../../assets/img/tourism/tourism_pic7.png" alt="">
-					<img src="../../assets/img/tourism/tourism_pic8.png" alt="">
+					<img src="../../assets/img/tourism/tourism_pic1.jpg" alt="">
+					<img src="../../assets/img/tourism/tourism_pic2.jpg" alt="">
+					<img src="../../assets/img/tourism/tourism_pic3.jpg" alt="">
+					<img src="../../assets/img/tourism/tourism_pic4.jpg" alt="">
+					<img src="../../assets/img/tourism/tourism_pic5.jpg" alt="">
+					<img src="../../assets/img/tourism/tourism_pic6.jpg" alt="">
+					<img src="../../assets/img/tourism/tourism_pic7.jpg" alt="">
+					<img src="../../assets/img/tourism/tourism_pic8.jpg" alt="">
 				</div>
 			</div>
 			<div class="banner">
-				<img src="../../assets/img/tourism/yue_banner.png" class="responsive-img">
+				<img src="../../assets/img/tourism/yue_banner.jpg" class="responsive-img">
 			</div>
 			<div class="view">
 				<img src="../../assets/img/tourism/view.png">
 			</div>
 			<div class="map">
-				<img src="../../assets/img/yue_map.png" class="responsive-img">
+				<img src="../../assets/img/yue_map.jpg" class="responsive-img">
 			</div>
 		</div>
 	</section>
@@ -39,7 +39,7 @@
 <style scoped lang="scss">
 	.header {
 		height: 100vh;
-		background: url(../../assets/img/tourism/banner.png) no-repeat center;
+		background: url(../../assets/img/tourism/banner.jpg) no-repeat center;
 		background-size: cover;
 	}
 	.main {

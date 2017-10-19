@@ -1,7 +1,7 @@
 <template>
 	<section>
 		<header class="header">
-			<img src="../../assets/img/photo/native_head.png" class="responsive-img">
+			<img src="../../assets/img/photo/native_head.jpg" class="responsive-img">
 		</header>
 		<div class="main">
 			<div class="main-center">
@@ -9,25 +9,28 @@
 					<img src="../../assets/img/photo/native_title.png" class="responsive-img">
 				</div>
 				<div>
-					<img src="../../assets/img/photo/native_show1.png" alt="">
+					<img src="../../assets/img/photo/native_show1.jpg" alt="">
 				</div>
 				<div>
-					<img src="../../assets/img/photo/native_show2.png" alt="">
+					<img src="../../assets/img/photo/native_show2.jpg" alt="">
 				</div>
 				<div>
-					<img src="../../assets/img/photo/native_show3.png" alt="">
+					<img src="../../assets/img/photo/native_show3.jpg" alt="">
 				</div>
 				<div>
-					<img src="../../assets/img/photo/native_show4.png" alt="">
+					<img src="../../assets/img/photo/native_show4.jpg" alt="">
 				</div>
 				<div>
-					<img src="../../assets/img/photo/native_show5.png" alt="">
+					<img src="../../assets/img/photo/native_show5.jpg" alt="">
 				</div>
 				<div>
-					<img src="../../assets/img/photo/native_show6.png" alt="">
+					<img src="../../assets/img/photo/native_show6.jpg" alt="">
 				</div>
 				<div>
-					<img src="../../assets/img/photo/native_show7.png" alt="">
+					<img src="../../assets/img/photo/native_show7.jpg" alt="">
+				</div>
+				<div>
+					<img src="../../assets/img/photo/native_show8.jpg" alt="">
 				</div>
 			</div>
 		</div>
@@ -45,7 +48,7 @@
 		height: 90vh;
 	}
 	.main {
-		background: url(../../assets/img/photo/wave_bg.png) repeat center fixed;
+		background: url(../../assets/img/photo/wave_bg.jpg) repeat center fixed;
 		.main-center {
 			width: 80%;
 			margin: 0 auto;
