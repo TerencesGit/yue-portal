@@ -12,7 +12,7 @@ import '@/assets/css/main.scss'
 
 Vue.use(Router)
 Vue.use(ElementUI)
-Mock.bootstrap()
+// Mock.bootstrap()
 Vue.prototype.$catchError = (err) => {
   if(err.code === 'ECONNABORTED') {
     ElementUI.Message('服务器响应超时')

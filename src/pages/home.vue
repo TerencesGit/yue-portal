@@ -106,6 +106,7 @@
 		methods: {
 			getUserInfo() {
 	      getMyInfo().then(res => {
+	      	console.log(res)
 	        if(res.data.code === '0001') {
 	        } else {
 	          // this.$message.error(res.data.message)
@@ -186,10 +187,14 @@
 	  background: #fff;
 	  span {
 			display: inline-block;
-			width: 30px;
-			height: 30px;
+			width: 25px;
+			height: 25px;
 			background: url(../assets/img/footer/yue_icon.png) no-repeat center;
 			background-size: cover;
+			@media (min-width: 768px) {
+				width: 30px;
+				height: 30px;
+			}
 		}
 	}
 </style>

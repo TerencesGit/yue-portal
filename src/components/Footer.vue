@@ -61,8 +61,8 @@
 		.footer-nav {
 			display: flex;
 			justify-content: center;
-			padding: 20px 50px;
 			width: 80%;
+			padding: 20px 0;
 			margin: auto;
 		  .nav-item {
 		  	flex: 1;
@@ -80,33 +80,44 @@
 		    }
 		    .item-show {
 		      position: absolute;
-		      top: 60%;
+		      top: 40%;
 		      left: 0;
 		      width: 100%;
 		      text-align: center;
-		      @media screen and (max-width: 768px) {
-					  top: 50%;
+		      @media (min-width: 768px) {
+					  top: 60% ;
 					}
-					@media screen and (max-width: 450px) {
-					  top: 30%;
-					}
+					// @media (min-width: 1200px) {
+					//   top: 50% ;
+					// }
 		      .show-button {
 		      	display: block;
 		      	width: 50%;
 		      	margin: auto;
+		      	img {
+		      		width: 80%;
+		      		@media (min-width: 768px) {
+							  width: 72%;
+							}
+		      	}
 		      }
 		    }
 		  }
 		}
 		.footer-logo {
-			padding: 0 15px 15px;
+			width: 100%;
+			padding: 0 10px 10px;
 			text-align: center;
 			span {
 				display: inline-block;
-				width: 30px;
-				height: 30px;
+				width: 25px;
+				height: 25px;
 				background: url(../assets/img/footer/yue_icon.png) no-repeat center;
 				background-size: cover;
+				@media (min-width: 768px) {
+					width: 30px;
+					height: 30px;
+				}
 			}
 		}
 	}

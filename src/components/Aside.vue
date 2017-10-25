@@ -132,6 +132,9 @@
 		top: 100px;
 		left: 0;
 		z-index: 999;
+		@media (max-width: 640px) {
+			display: none;
+		}
 		// width: 120px;
 		.logo {
 			padding: 10px;

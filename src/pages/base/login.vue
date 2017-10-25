@@ -63,6 +63,7 @@
 					}
 					this.loading = true;
 					requestLogin(data).then(res => {
+						console.log(res)
 						this.loading = false;
 						if(res.data.code === '0001') {
 							let user = {
@@ -82,6 +83,8 @@
 						}
 					}).catch(err => {
 						console.log(err)
+						this.loading = false;
+						this.$catchError(err)
 					})
 				}
 			}

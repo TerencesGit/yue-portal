@@ -5,7 +5,7 @@
 				<img src="../assets/img/header_logo.png">
 			</slot>
 		</div>
-		<div class="icon-arrow-down" @click="scrollDown">
+		<div class="header-icon" @click="scrollDown">
 			<slot name="scroll-button">
 				<img src="../assets/img/arrow_down_yue.png">
 			</slot>
@@ -38,29 +38,38 @@
 <style scoped lang="scss">
 	.full-header {
 	  position: relative;
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
 	  height: 100vh;
-	  background: url(../assets/img/header_bg.jpg) no-repeat center;
+	  background: url(../assets/img/header_banner.jpg) no-repeat center;
 	  background-size: cover;
-	  @media screen and (max-width: 768px) {
-		  background: url(../assets/img/header_bg_mob.jpg) no-repeat center;
+	  @media (min-width: 768px) {
+	  	background: url(../assets/img/header_bg.jpg) no-repeat center;
 	  	background-size: cover;
 		}
 	  .header-title {
+	  	position: absolute;
+	  	top: 75%;
+
+	  	transform: translateY(-50%);
 	  	width: 80%;
-	  	margin: auto;
+	  	margin-left: 10%;
 	  	text-align: center;
+	  	@media (min-width: 768px) {
+	  		top: 50%;
+	  	}
 	  }
-	  .icon-arrow-down {
+	  .header-icon {
 	    position: absolute;
+	    left: 50%;
 	    bottom: 10%;
-	    width: 45px;
-	    margin: auto;
+	    width: 30px;
+	    margin-left: -15px;
 	    text-align: center;
 	    cursor: pointer;
 	    animation: flicker .4s ease-in-out infinite alternate;
+	    @media (min-width: 768px) {
+	  		width: 45px;
+	    	margin-left: -22.5px;
+	  	}
 	  }
 	}
 	@keyframes flicker {

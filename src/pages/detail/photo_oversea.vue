@@ -46,6 +46,12 @@
 <style scoped lang="scss">
 	.header {
 		height: 95vh;
+		.responsive-img {
+			height: 100%;
+			@media (min-width: 768px) {
+				height: auto;
+			}
+		}
 	}
 	.main {
 		background: url(../../assets/img/photo/wave_bg.jpg) repeat center fixed;
